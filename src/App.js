@@ -26,13 +26,14 @@ function App() {
       <header>
         <nav>
           <h2>LamberteDesign</h2>
-        </nav>
+
         
-        <ul>
-          {menuItems.map(menu => (
-            <li><a href={`#${menu.title}`}>{menu.title}</a></li>
-          ))}      
-        </ul>
+          <ul>
+            {menuItems.map(menu => (
+              <li><a href={`#${menu.title}`}>{menu.title}</a></li>
+            ))}      
+          </ul>
+        </nav>
       </header>
       <main>
 
