@@ -1,4 +1,7 @@
 import './App.css';
+import { Link } from 'react-scroll';
+
+
 
 function App() {
 
@@ -26,11 +29,11 @@ function App() {
       <header>
         <nav>
           <h2>LamberteDesign</h2>
-
-        
           <ul>
             {menuItems.map(menu => (
-              <li><a href={`#${menu.title}`}>{menu.title}</a></li>
+              <li>
+                <Link to={menu.title} smooth={true} offset={-window.innerHeight/2} duration={2000}>{menu.title}</Link>
+              </li>
             ))}      
           </ul>
         </nav>

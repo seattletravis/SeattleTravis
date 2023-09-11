@@ -6,3 +6,37 @@ nav {
   color: white;
   padding: 10px;
 }
+
+ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 50%;
+  list-style: none;
+  font-weight: bold;
+}
+
+li {
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  text-transform: capitalize;
+}
+
+.content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: crimson;
+  margin: 30px;
+  border-radius: 30px;
+}
+
+.content-header {
+  color: white;
+  text-transform: capitalize;
+}
