@@ -14,6 +14,7 @@ ul {
   width: 50%;
   list-style: none;
   font-weight: bold;
+
 }
 
 li {
@@ -24,19 +25,90 @@ a {
   text-decoration: none;
   color: white;
   text-transform: capitalize;
+
 }
 
 .content {
   display: flex;
-  align-items: center;
-  justify-content: center;
+  align-items: left;
+  justify-content: left;
+  padding-top: 30px;
+  padding-left: 60px;
   height: 100vh;
   background-color: crimson;
   margin: 30px;
   border-radius: 30px;
+  
 }
 
 .content-header {
   color: white;
   text-transform: capitalize;
 }
+
+.scroll-header {
+  background-color: black;
+  color: white;
+  padding: 30px;
+
+}
+
+.tile-padding{
+  background-color: black;
+  padding: 1vw;
+  box-sizing: border-box;
+  
+}
+
+.horizontal {
+  align-items: center;
+  justify-content: center;
+  color: black;
+  background-color: black;
+}
+
+.main{
+  width: 25vw;
+  height: 75vh;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+}
+
+.App{
+  width: 99vw;
+  height: 100vh;
+  background-color: black;
+}
+
+.lamberteDesign{
+  padding-left: 30px;
+}
+
+.bg1{
+  background-color: aqua;
+  padding: 30px;
+}
+
+.bg2{
+  background-color: red;
+}
+
+.bg3{
+  background-color: blue;
+}
+
+.bg4{
+  background-color: green;
+}
+
+.bg5{
+  background-color: purple;
+}
+
+.background{
+  background-color: black;
+}
+

@@ -1,51 +1,57 @@
 import './App.css';
 import { Link } from 'react-scroll';
-
+import ScrollableGameContent from './components/ScrollableGameContent';
+import ScrollableVideoContent from './components/ScrollableVideoContent';
+import ScrollableTShirtContent from './components/ScrollableTShirtContent';
+import ScollableGitHubContent from './components/ScrollableGitHubContent';
+import image from "./images/seattle.jpg";
 
 
 function App() {
 
-  const menuItems = [
-    {
-      id: 1,
-      title: 'home'
-    },
-    {
-      id: 2,
-      title: 'portfolio'
-    },
-    {
-      id: 3,
-      title: 'contact'
-    },
-    {
-      id: 4,
-      title: 'about'
-    },
-  ]
+let imageStyle = {
+  height: "90vh",
+  width: "99vw",
+  backgroundImage:`url(${image})`,
+  backgroundSize: "contain",
+  backgroundRepeat: "no-repeat",
+};
 
-  return (
+
+const menuItems = [
+  {id: 1, title: 'games'},
+  {id: 2, title: 'youtube'},
+  {id: 3, title: 'github'},
+  {id: 4, title: 'tshirts'},
+]
+
+return (
+
+  <div className='background'>
     <div className="App">
-      <header>
-        <nav>
-          <h2>LamberteDesign</h2>
-          <ul>
-            {menuItems.map(menu => (
-              <li>
-                <Link to={menu.title} smooth={true} offset={-window.innerHeight/2} duration={2000}>{menu.title}</Link>
-              </li>
-            ))}      
-          </ul>
-        </nav>
-      </header>
-      <main>
+      <nav>
+        <h2 className='lamberteDesign'>LamberteDesign</h2>
+        <ul>
+          {menuItems.map(menu => (
+            <li>
+              <Link to={menu.title} smooth={true} offset={0} duration={2000}>{menu.title}</Link>
+            </li>
+          ))}      
+        </ul>
+      </nav>
 
-        {menuItems.map(menu => (
-          <div className='content'>
-            <h1 className="content-header" id={menu.title}>{menu.title}</h1>
-          </div>
-        ))}
-      </main>
+      <div>
+        <div style={imageStyle}>This div has an image</div>
+
+      </div>
+
+  
+
+      <ScrollableGameContent />
+      <ScrollableVideoContent />
+      <ScollableGitHubContent />
+      <ScrollableTShirtContent />
+      </div>
     </div>
   );
 }
