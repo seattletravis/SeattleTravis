@@ -9,15 +9,6 @@ import image from "./images/seattle.jpg";
 
 function App() {
 
-let imageStyle = {
-  height: "90vh",
-  width: "99vw",
-  backgroundImage:`url(${image})`,
-  backgroundSize: "contain",
-  backgroundRepeat: "no-repeat",
-};
-
-
 const menuItems = [
   {id: 1, title: 'games'},
   {id: 2, title: 'youtube'},
@@ -40,10 +31,12 @@ return (
         </ul>
       </nav>
 
-      <div>
-        <div style={imageStyle}>This div has an image</div>
 
+      <div className='seattleimage'>
+        <img src={image} alt=''/>
       </div>
+
+
 
   
 

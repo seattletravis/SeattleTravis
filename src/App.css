@@ -112,3 +112,19 @@ a {
   background-color: black;
 }
 
+.seattleimage{
+  display: flex;
+  justify-content: right;
+  align-items: right; 
+  height: auto;
+  width: 99vw;
+  /* padding: 1vw; */
+  object-fit: scale-down;
+  border: solid red 4px;
+}
+
+.seattleimage img{
+  height: auto;
+  width: 70vw;
+  padding: 1vw;
+}
