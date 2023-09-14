@@ -1,5 +1,5 @@
 import HorizontalScroll from "react-scroll-horizontal"
-
+import NavigationBar from "./NavigationBar"
 
 function ScrollableTShirtContent(){
 
@@ -26,6 +26,7 @@ const renderedTShirts = shirtData.map((shirt) => {
 return(
   <>
   <h1 className='scroll-header' id='tshirts'>Uncle Hawaii Beach Apparel - Shop & Save!!!</h1>
+  <NavigationBar />
   <HorizontalScroll>
     {renderedTShirts}
   </HorizontalScroll>

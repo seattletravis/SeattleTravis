@@ -1,4 +1,5 @@
 import HorizontalScroll from "react-scroll-horizontal"
+import NavigationBar from "./NavigationBar";
 
 function ScrollableVideoContent(){
 
@@ -50,6 +51,7 @@ function ScrollableVideoContent(){
   return(
     <>
       <h1 className='scroll-header' id='youtube'>Coding Videos & Youtube Shorts</h1>
+      <NavigationBar />
       <HorizontalScroll>
       {displayVideoInfo}
       </HorizontalScroll> 

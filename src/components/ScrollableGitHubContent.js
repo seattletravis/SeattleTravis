@@ -1,5 +1,5 @@
 import HorizontalScroll from "react-scroll-horizontal"
-
+import NavigationBar from "./NavigationBar"
 
 function ScollableGitHubContent(){
 
@@ -29,6 +29,7 @@ const renderedGit = gitData.map((git) => {
 return(
 <>
 <h1 className='scroll-header' id='github'>GitHub Portfolio</h1>
+<NavigationBar />
 <HorizontalScroll>
 {renderedGit}
 </HorizontalScroll>   
