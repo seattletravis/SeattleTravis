@@ -1,7 +1,7 @@
 
 
 
-function IntroductionBar(props){
+function ContentBanner(props){
 
   return(
     <div className='seattleimage'>
@@ -13,4 +13,4 @@ function IntroductionBar(props){
 
 
 
-export default IntroductionBar;
+export default ContentBanner;
