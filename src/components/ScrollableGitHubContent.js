@@ -4,40 +4,44 @@ import NavigationBar from "./NavigationBar"
 function ScollableGitHubContent(){
 
 const gitData = [
-  {id: '1', title: 'Tilt3D Single Player', price: '', url: '', css: 'main bg1', image: ''},
-  {id: '2', title: 'Tilt3D Multi Player', price: '', url: '', css: 'main bg2', image: ''},
-  {id: '3', title: 'Uncha Software Part 1', price: '', url: '', css: 'main bg3', image: ''},
-  {id: '4', title: 'Uncha Software Part 2', price: '', url: '', css: 'main bg4', image: ''},
-  {id: '5', title: 'Uncha Software Part 3', price: '', url: '', css: 'main bg5', image: ''},
-  {id: '6', title: 'Uncha Software Part 4', price: '', url: '', css: 'main bg1', image: ''},
-  {id: '6', title: 'Uncha Software Part 5', price: '', url: '', css: 'main bg2', image: ''},
-  {id: '6', title: 'Uncha Software Part 6', price: '', url: '', css: 'main bg3', image: ''},
+  {id: '1', title: 'Tilt3D Single Player', price: '', language: 'JavaScript, HTML, CSS', css: 'main bg1', image: 'images/tilt3d2.png', libraries: 'ThreeJS, CannonES'},
+  {id: '2', title: 'Tilt3D Multi Player', price: '', language: 'JavaScript, HTML, CSS', css: 'main bg2', image: 'images/tilt3dmulti1.png', libraries: 'ThreeJS, Cannon ES'},
+  {id: '3', title: 'Uncha Software Part 1', price: '', language: 'Python', css: 'main bg3', image: 'images/uncha1.png', libraries: 'rembg, tkinter, threading, pillow, os'},
+  {id: '4', title: 'Uncha Software Part 2', price: '', language: 'Python', css: 'main bg4', image: 'images/uncha2.png', libraries: 'rembg, tkinter, threading, pillow, os'},
+  {id: '5', title: 'Uncha Software Part 3', price: '', language: 'Python', css: 'main bg5', image: 'images/uncha3.png', libraries: 'rembg, tkinter, threading, pillow, os'},
+  {id: '6', title: 'Uncha Software Part 4', price: '', language: 'Python', css: 'main bg1', image: 'images/uncha4.png', libraries: 'rembg, tkinter, threading, pillow, os'},
+  {id: '6', title: 'Uncha Software Part 5', price: '', language: 'Python', css: 'main bg2', image: 'images/uncha5.png', libraries: 'rembg, tkinter, threading, pillow, os'},
+  {id: '6', title: 'Uncha Software Part 6', price: '', language: 'Python', css: 'main bg3', image: 'images/uncha6.png', libraries: 'rembg, tkinter, threading, pillow, os'},
 
 ]
 
 const renderedGit = gitData.map((git) => {
   return(
-    <div className='tile-padding'>
-    <div className={git.css}>
-      <h1>{git.title}</h1>
-    </div>
-  </div>
+    <>
+      <div className='gitDisplayTiles'>
+        <img src={git.image} alt=''/>
+        <div className="responsiveFontSizing">
+          <h1>{git.title}</h1>
+          <h2>{git.language}</h2>
+          <h2>{git.libraries}</h2>
+        </div>
+      </div>
+    </>
+
   )
 }) 
 
 
-return(
-<>
-<h1 className='scroll-header' id='github'>GitHub Portfolio</h1>
-<NavigationBar />
-<HorizontalScroll>
-{renderedGit}
-</HorizontalScroll>   
-</>
+  return(
+    <>
+      <div id='github'></div>
+      <NavigationBar title={'GitHub Projects - Open Source'}/>
+      <HorizontalScroll>
+      {renderedGit}
+      </HorizontalScroll>   
+    </>
 
-)
-
-
+  )
 
 }
 

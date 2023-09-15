@@ -1,22 +1,24 @@
 import HorizontalScroll from "react-scroll-horizontal";
 import NavigationBar from "./NavigationBar";
-import tilt3d2 from "../images/tilt3d2.png";
+
 
 function ScrollableGameContent(){
 
   const gameData = [
-    {id: '1', title: 'Tilt3D Single Player', language: 'JavaScript', 
-    url: 'addlater.com', image: tilt3d2, css: 'gamedisplaytiles'},
+    {id: '1', title: 'Tilt3D Single Player', language: 'JavaScript, HTML, CSS', 
+    url: 'addlater.com', image: 'images/tilt3d2.png', libraries: 'ThreeJS, CannonES'},
     {id: '2', title: 'Tilt3D Multi Player', language: 'JavaScript', 
-    url: '', image: tilt3d2, css: 'gamedisplaytiles'},
-    {id: '3', title: "Beemo's Date & Time Page", language: 'JavaScript', 
-    url: '', image: tilt3d2, css: 'gamedisplaytiles'},
-    {id: '4', title: "Orbits", language: 'JavaScript', 
-    url: '', image: tilt3d2, css: 'gamedisplaytiles'},
-    {id: '5', title: "90's Throwback", language: 'JavaScript', 
-    url: '', image: tilt3d2, css: 'gamedisplaytiles'},
-    {id: '6', title: 'Tetrominos', language: 'JavaScript', 
-    url: '', image: tilt3d2, css: 'gamedisplaytiles'},
+    url: '', image: 'images/tilt3dmulti1.png', libraries: 'ThreeJS, CannonES'},
+    {id: '3', title: 'Bubble Gum Game', language: 'JavaScript', 
+    url: '', image: 'images/bubblegum4.png', libraries: ''},
+    {id: '4', title: "Beemo's Date & Time Page", language: 'JavaScript', 
+    url: '', image: 'images/beemo2.png', libraries: ''},
+    {id: '5', title: "Orbits", language: 'JavaScript', 
+    url: '', image: 'images/orbits1.png', libraries: ''},
+    {id: '6', title: "90's Throwback", language: 'JavaScript', 
+    url: '', image: 'images/throwback1.png', libraries: ''},
+    {id: '7', title: 'Tetrominos', language: 'JavaScript', 
+    url: '', image: 'images/tetro1.png', libraries: ''},
     
 
   ]
@@ -24,26 +26,26 @@ function ScrollableGameContent(){
   const renderedGames = gameData.map((game) => {
     return (
       <>
-        {/* <div className='tile-padding'> */}
-          <div className='gamedisplaytiles'>
-            <img src={game.image} alt=''/>
+        <div className='gameDisplayTiles'>
+          <img src={game.image} alt=''/>
+          <div className="responsiveFontSizing">
             <h1>{game.title}</h1>
+            <h2>{game.language}</h2>
+            <h2>{game.libraries}</h2>
           </div>
-        {/* </div> */}
+        </div>
       </>
-
     );
   });
 
   
   return(
     <>
-      <h1 className='scroll-header' id='games'>Games & Web Applications</h1>
-      <NavigationBar />
+      <div id="games"></div>
+      <NavigationBar title={'Games & Web Applications'}/>
       <HorizontalScroll>
       {renderedGames}
       </HorizontalScroll> 
-
     </>
   )
 

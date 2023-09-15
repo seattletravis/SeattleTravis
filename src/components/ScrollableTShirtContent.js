@@ -4,29 +4,52 @@ import NavigationBar from "./NavigationBar"
 function ScrollableTShirtContent(){
 
 const shirtData = [
-  {id: '1', title: 'Listing 1', price: '19.99', url: '', css: 'main bg1', image: ''},
-  {id: '2', title: 'Listing 2', price: '19.99', url: '', css: 'main bg2', image: ''},
-  {id: '3', title: 'Listing 3', price: '19.99', url: '', css: 'main bg3', image: ''},
-  {id: '4', title: 'Listing 4', price: '19.99', url: '', css: 'main bg4', image: ''},
-  {id: '5', title: 'Listing 5', price: '19.99', url: '', css: 'main bg5', image: ''},
-  {id: '6', title: 'Listing 6', price: '19.99', url: '', css: 'main bg6', image: ''},
+  {id: '1', title: 'Hawaii in Space', price: '19.99', url: '', 
+  image: 'images/tees/spacekihei.png'},
+  {id: '2', title: 'Uncle Hawaii Specialty Beach Apparel', price: '19.99', url: '', 
+  image: 'images/tees/unclehawaii.png'},
+  {id: '3', title: 'Kapalua Hawaii - A Beach Paradise', price: '19.99', url: '', 
+  image: 'images/tees/humu.png'},
+  {id: '4', title: 'Kona Hawaii', price: '19.99', url: '', 
+  image: 'images/tees/kona.png'},
+  {id: '5', title: 'Maui Pineapple', price: '19.99', url: '', 
+  image: 'images/tees/pineapplebeach.png'},
+  {id: '6', title: 'Turtle Town Maui', price: '19.99', url: '', 
+  image: 'images/tees/turtletown.png'},
+  {id: '7', title: 'Finally a Ukulele Shirt', price: '19.99', url: '', 
+  image: 'images/tees/ukuleleshirt.png'},
+  {id: '8', title: 'Waikiki Sun', price: '19.99', url: '', 
+  image: 'images/tees/waikikiretrosun.png'},
+  {id: '9', title: 'Kihei Nutrition Facts', price: '19.99', url: '', 
+  image: 'images/tees/nutritionfacts.png'},
+  {id: '10', title: 'Hawaii Retro', price: '19.99', url: '', 
+  image: 'images/tees/hawaiiretro.png'},
+  {id: '11', title: 'Waikiki Retro', price: '19.99', url: '', 
+  image: 'images/tees/waikikibeach.png'},
+  {id: '12', title: 'Waikiki Sun', price: '19.99', url: '', 
+  image: 'images/tees/waikikiretro.png'},
+
 ]
 
 const renderedTShirts = shirtData.map((shirt) => {
   return(
-    <div className='tile-padding'>
-    <div className={shirt.css}>
-      <h1>{shirt.title}</h1>
-    </div>
-  </div>
+    <>
+      <div className='shirtDisplayTiles'>
+        <img src={shirt.image} alt=''/>
+        <div className="responsiveFontSizing">
+          <h1>{shirt.title}</h1>
+          <h2>from ${shirt.price}</h2>
+        </div>
+      </div>
+    </>
   )
 })
 
 
 return(
   <>
-  <h1 className='scroll-header' id='tshirts'>Uncle Hawaii Beach Apparel - Shop & Save!!!</h1>
-  <NavigationBar />
+  <div id="tshirts"></div>
+  <NavigationBar title={'Uncle Hawaii Specialty Beach Apparel - Shop & Save!'}/>
   <HorizontalScroll>
     {renderedTShirts}
   </HorizontalScroll>

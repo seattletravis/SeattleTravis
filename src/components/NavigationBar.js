@@ -1,7 +1,7 @@
 import { Link } from 'react-scroll';
 
 
-function NavigationBar(){
+function NavigationBar(props){
 
   const menuItems = [
     {id: 1, title: 'home'},
@@ -14,10 +14,10 @@ function NavigationBar(){
 return(
     <>
       <nav>
-        <h2 className='lamberteDesign'>LamberteDesign</h2>
+        <h2 className='navBarTitle'>{props.title}</h2>
           <ul>
             {menuItems.map(menu => (
-              <li>
+              <li className='navButtons'>
                 <Link to={menu.title} smooth={true} offset={0} duration={1000}>{menu.title}</Link>
               </li>
             ))}      

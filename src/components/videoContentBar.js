@@ -1,11 +1,8 @@
-
-
-
-function IntroductionBar(props){
+function IntroductionBar(){
 
   return(
     <div className='seattleimage'>
-      <img src={props.imagePath} alt=''/>
+      <img src={'images/seattle.jpg'} alt=''/>
     </div>
   )
 }

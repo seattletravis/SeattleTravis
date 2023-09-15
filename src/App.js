@@ -13,16 +13,23 @@ function App() {
     <div>
       <div className='background' id='home'>
         <div className="App">
-          <NavigationBar />
-          <IntroductionBar />
+          <NavigationBar title={"LamberteDesign"}/>
+          <IntroductionBar imagePath={'images/seattle.jpg'} />
         </div>
       </div>
 
       <div className='scrolldivs'>
         <ScrollableGameContent />
+        <IntroductionBar imagePath={'images/gamesbar.png'}/>
         <ScrollableVideoContent />
+        <IntroductionBar imagePath={'images/gamesbar.png'}/>
+
         <ScollableGitHubContent />
+        <IntroductionBar imagePath={'images/gamesbar.png'}/>
+
         <ScrollableTShirtContent />
+        <IntroductionBar imagePath={'images/gamesbar.png'}/>
+
       </div>
  
     </div>
