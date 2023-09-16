@@ -26,7 +26,7 @@ function ScrollableGameContent(){
   const renderedGames = gameData.map((game) => {
     return (
       <>
-        <div className='gameDisplayTiles'>
+        <div className='displayTiles'>
           <img src={game.image} alt=''/>
           <div className="responsiveFontSizing">
             <h1>{game.title}</h1>
@@ -44,8 +44,9 @@ function ScrollableGameContent(){
       <div id="games"></div>
       <NavigationBar title={'Games & Web Applications'}/>
       <HorizontalScroll>
-      {renderedGames}
+          {renderedGames}
       </HorizontalScroll> 
+
     </>
   )
 

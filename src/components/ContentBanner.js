@@ -4,7 +4,7 @@
 function ContentBanner(props){
 
   return(
-    <div className='seattleimage'>
+    <div className='contentBanner'>
       <img src={props.imagePath} alt=''/>
     </div>
   )

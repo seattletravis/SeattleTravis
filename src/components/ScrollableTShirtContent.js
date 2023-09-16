@@ -34,7 +34,7 @@ const shirtData = [
 const renderedTShirts = shirtData.map((shirt) => {
   return(
     <>
-      <div className='shirtDisplayTiles'>
+      <div className='displayTiles dTShirts'>
         <img src={shirt.image} alt=''/>
         <div className="responsiveFontSizing">
           <h1>{shirt.title}</h1>
