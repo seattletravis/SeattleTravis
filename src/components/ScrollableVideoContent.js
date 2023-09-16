@@ -40,7 +40,7 @@ function ScrollableVideoContent(){
   const displayVideoInfo = videoData.map((video) => {
     return (
       <>
-        <div className='displayTiles'>
+        <div className='displayTiles dTVideos'>
           <img src={video.image} alt=''/>
           <div className="responsiveFontSizing">
             <h1>{video.title}</h1>

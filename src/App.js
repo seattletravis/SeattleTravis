@@ -16,7 +16,6 @@ function App() {
         <div className="App">
           <NavigationBar title={"LamberteDesign"}/>
           <ContentBanner imagePath={'images/seattle.jpg'} />
-          <SpacerBar />
         </div>
       </div>
 
@@ -37,6 +36,7 @@ function App() {
         <SpacerBar />
         <ScrollableTShirtContent />
         <ContentBanner imagePath={'images/gamesbar.png'}/>
+        <iframe className="iframe" title="Hello World" src='https://travis.lamberte.com/bubbleGum/index.html' />
 
       </div>
  

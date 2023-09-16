@@ -18,7 +18,7 @@ const gitData = [
 const renderedGit = gitData.map((git) => {
   return(
     <>
-      <div className='displayTiles'>
+      <div className='displayTiles dTGits'>
         <img src={git.image} alt=''/>
         <div className="responsiveFontSizing">
           <h1>{git.title}</h1>

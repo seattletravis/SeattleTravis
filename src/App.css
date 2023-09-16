@@ -8,12 +8,12 @@ nav {
 }
 
 .navBarTitle{
-  padding-left: 15px;
+  padding-left: 10px;
   font-size: 2vw;
 }
 
 .navButtons{
-  font-size: 1.5vw;
+  font-size: 1vw;
 }
 
 ul {
@@ -98,7 +98,7 @@ a {
 }
 
 .responsiveFontSizing{
-  font-size: 1vw;
+  font-size: .7vw;
   border-bottom: 2vw;
 }
 
@@ -121,13 +121,13 @@ a {
 }
 
 .spacerBar{
-  padding-bottom: 2vw;
+  padding-bottom: 5vw;
   background-color: black;
 }
 
 .scrollBlock{
   width: 99vw;
-  height: 36vw;
+  height: 40vw;
   object-fit: scale-down;
 }
 
@@ -138,7 +138,7 @@ a {
   justify-content: center;
   align-items: center; 
   width: 40vw;
-  padding-bottom: 8vw;
+  padding-bottom: 9vw;
   padding-left: 2vw;
   padding-right: 2vw;
   padding-top: 2vw;
@@ -146,13 +146,14 @@ a {
 }
 
 .displayTiles div{
-  background-color: grey;
-  height: 7vw;
+  background-color: black;
+  color: pink;
+  /* height: 7vw;
   border-bottom: solid 3px pink;
   border-left: solid 3px pink;
   border-right: solid 3px pink;
   border-bottom-left-radius: 10px;
-  border-bottom-right-radius: 10px;
+  border-bottom-right-radius: 10px; */
 
 }
 
@@ -163,5 +164,20 @@ a {
 }
 
 .dTShirts{
-  width: 28vw;
+  width: 33vw;
+}
+
+.dTVideos{
+  width: 55vw;
+}
+
+.dTGits{
+  width: 55vw;
+}
+
+.iframe{
+  width: 100vw;
+  height: 100%;
+  object-fit: contain;
+
 }

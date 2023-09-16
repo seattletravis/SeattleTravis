@@ -4,7 +4,7 @@ import NavigationBar from "./NavigationBar"
 function ScrollableTShirtContent(){
 
 const shirtData = [
-  {id: '1', title: 'Hawaii in Space', price: '19.99', url: '', 
+  {id: '1', title: 'Hawaii in Space', price: '19.99', url: 'https://www.unclehawaii.com/listing/kihei-hawaii-astronaut-appar?product=369', 
   image: 'images/tees/spacekihei.png'},
   {id: '2', title: 'Uncle Hawaii Specialty Beach Apparel', price: '19.99', url: '', 
   image: 'images/tees/unclehawaii.png'},
