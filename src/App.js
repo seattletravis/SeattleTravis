@@ -27,7 +27,6 @@ function App() {
         <SpacerBar />
 
         <ContentBanner imagePath={'images/gamesbar.png'}/>
-
         <ScollableGitHubContent />
         <SpacerBar />
 
@@ -35,10 +34,12 @@ function App() {
 
         <SpacerBar />
         <ScrollableTShirtContent />
+        <NavigationBar title={"Lets Play BubbleGum!"} /> 
         <ContentBanner imagePath={'images/gamesbar.png'}/>
         <iframe className="iframe" title="Hello World" src='https://travis.lamberte.com/bubbleGum/index.html' />
-        <SpacerBar />
 
+        <NavigationBar title={"You've reached the bottom!"} /> 
+        <SpacerBar />
       </div>
  
     </div>

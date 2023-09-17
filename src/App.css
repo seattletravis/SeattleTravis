@@ -100,7 +100,6 @@ a {
 .responsiveFontSizing{
   font-size: .7vw;
   border-bottom: 2vw;
-
 }
 
 .contentBanner{
@@ -112,13 +111,14 @@ a {
   padding: 1vw;
   object-fit: scale-down;
   background-color: black;
-  /* border: solid 3px blue; */
+
 }
 
 .contentBanner img{
   height: auto;
   width: 90vw;
-  /* padding: 1vw; */
+  /* border: solid 3px blue; */
+  border-radius: 3vw;
 }
 
 .spacerBar{
@@ -149,8 +149,8 @@ a {
 .displayTiles div{
   background-color: black;
   color: pink;
-  /* height: 7vw;
-  border-bottom: solid 3px pink;
+  /* height: 30vw; */
+  /* border-bottom: solid 3px pink;
   border-left: solid 3px pink;
   border-right: solid 3px pink;
   border-bottom-left-radius: 10px;
@@ -162,7 +162,8 @@ a {
   width: 100%;
   height: auto;
   object-fit: contain;
-  border: solid 3px yellow;
+  /* border: solid 3px yellow; */
+  border-radius: 2vw;
 }
 
 .dTShirts{
@@ -181,5 +182,17 @@ a {
   width: 100vw;
   height: 100%;
   object-fit: contain;
+}
 
+.playButton{
+  padding-top: 1vw;
+  padding-bottom: 1vw;
+}
+
+.playButton a{
+  font-size: 1.5vw;
+  color: blue;
+  background-color: blueviolet;
+  border: solid 3px blue;
+  border-radius: 1vw;
 }

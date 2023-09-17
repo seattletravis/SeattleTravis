@@ -19,9 +19,12 @@ const gitData = [
 const renderedGit = gitData.map((git) => {
   return(
     <React.Fragment key={git.id}>
-      <div className='displayTiles dTGits'>
+      <div className='displayTiles'>
         <img src={git.image} alt=''/>
         <div className="responsiveFontSizing">
+          <div className="playButton">
+            <a href={git.url}>PLAY NOW!</a>
+          </div>
           <h1>{git.title}</h1>
           <h2>{git.language}</h2>
           <h2>{git.libraries}</h2>
