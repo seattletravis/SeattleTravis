@@ -1,5 +1,6 @@
 import HorizontalScroll from "react-scroll-horizontal"
 import NavigationBar from "./NavigationBar";
+import React from "react";
 
 function ScrollableVideoContent(){
 
@@ -39,7 +40,7 @@ function ScrollableVideoContent(){
 
   const displayVideoInfo = videoData.map((video) => {
     return (
-      <>
+      <React.Fragment key={video.id}>
         <div className='displayTiles dTVideos'>
           <img src={video.image} alt=''/>
           <div className="responsiveFontSizing">
@@ -48,7 +49,7 @@ function ScrollableVideoContent(){
             <h2>{video.libraries}</h2>
           </div>
         </div>
-      </>
+      </React.Fragment>
     );
   });
 

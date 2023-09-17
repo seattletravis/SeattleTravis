@@ -1,5 +1,6 @@
 import HorizontalScroll from "react-scroll-horizontal"
 import NavigationBar from "./NavigationBar"
+import React from "react"
 
 function ScrollableTShirtContent(){
 
@@ -33,7 +34,7 @@ const shirtData = [
 
 const renderedTShirts = shirtData.map((shirt) => {
   return(
-    <>
+    <React.Fragment key={shirt.id}>
       <div className='displayTiles dTShirts'>
         <img src={shirt.image} alt=''/>
         <div className="responsiveFontSizing">
@@ -41,7 +42,7 @@ const renderedTShirts = shirtData.map((shirt) => {
           <h2>from ${shirt.price}</h2>
         </div>
       </div>
-    </>
+    </React.Fragment>
   )
 })
 

@@ -1,5 +1,6 @@
 import HorizontalScroll from "react-scroll-horizontal"
 import NavigationBar from "./NavigationBar"
+import React from "react"
 
 function ScollableGitHubContent(){
 
@@ -10,14 +11,14 @@ const gitData = [
   {id: '4', title: 'Uncha Software Part 2', price: '', language: 'Python', css: 'main bg4', image: 'images/uncha2.png', libraries: 'rembg, tkinter, threading, pillow, os'},
   {id: '5', title: 'Uncha Software Part 3', price: '', language: 'Python', css: 'main bg5', image: 'images/uncha3.png', libraries: 'rembg, tkinter, threading, pillow, os'},
   {id: '6', title: 'Uncha Software Part 4', price: '', language: 'Python', css: 'main bg1', image: 'images/uncha4.png', libraries: 'rembg, tkinter, threading, pillow, os'},
-  {id: '6', title: 'Uncha Software Part 5', price: '', language: 'Python', css: 'main bg2', image: 'images/uncha5.png', libraries: 'rembg, tkinter, threading, pillow, os'},
-  {id: '6', title: 'Uncha Software Part 6', price: '', language: 'Python', css: 'main bg3', image: 'images/uncha6.png', libraries: 'rembg, tkinter, threading, pillow, os'},
+  {id: '7', title: 'Uncha Software Part 5', price: '', language: 'Python', css: 'main bg2', image: 'images/uncha5.png', libraries: 'rembg, tkinter, threading, pillow, os'},
+  {id: '8', title: 'Uncha Software Part 6', price: '', language: 'Python', css: 'main bg3', image: 'images/uncha6.png', libraries: 'rembg, tkinter, threading, pillow, os'},
 
 ]
 
 const renderedGit = gitData.map((git) => {
   return(
-    <>
+    <React.Fragment key={git.id}>
       <div className='displayTiles dTGits'>
         <img src={git.image} alt=''/>
         <div className="responsiveFontSizing">
@@ -26,7 +27,7 @@ const renderedGit = gitData.map((git) => {
           <h2>{git.libraries}</h2>
         </div>
       </div>
-    </>
+    </React.Fragment>
 
   )
 }) 

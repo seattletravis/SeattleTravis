@@ -1,6 +1,6 @@
 import HorizontalScroll from "react-scroll-horizontal";
 import NavigationBar from "./NavigationBar";
-
+import React from "react";
 
 function ScrollableGameContent(){
 
@@ -25,16 +25,17 @@ function ScrollableGameContent(){
 
   const renderedGames = gameData.map((game) => {
     return (
-      <>
+      <React.Fragment key={game.id}>
         <div className='displayTiles'>
           <img src={game.image} alt=''/>
+          {/* <h1>{game.title}</h1> */}
           <div className="responsiveFontSizing">
             <h1>{game.title}</h1>
             <h2>{game.language}</h2>
             <h2>{game.libraries}</h2>
           </div>
         </div>
-      </>
+      </React.Fragment>
     );
   });
 

@@ -17,7 +17,7 @@ return(
         <h2 className='navBarTitle'>{props.title}</h2>
           <ul>
             {menuItems.map(menu => (
-              <li className='navButtons'>
+              <li key={menu.id} className='navButtons'>
                 <Link to={menu.title} smooth={true} offset={0} duration={1000}>{menu.title}</Link>
               </li>
             ))}      
