@@ -2,8 +2,8 @@ function SpacerBar(){
 
   return(
     <>
-    <div className="spacerBar">Scroll Divider</div>
-  </>
+      <div className="spacerBar">Scroll Divider</div>
+    </>
 
   )
 }

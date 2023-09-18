@@ -1,6 +1,7 @@
 import HorizontalScroll from "react-scroll-horizontal";
 import NavigationBar from "./NavigationBar";
 import React from "react";
+import ImageBanner from "./ImageBanner";
 
 function ScrollableGameContent(){
 
@@ -26,7 +27,7 @@ function ScrollableGameContent(){
   const renderedGames = gameData.map((game) => {
     return (
       <React.Fragment key={game.id}>
-        <div className='displayTiles'>
+        <div className='displayTiles dTGames'>
           <img src={game.image} alt=''/>
           <div className="responsiveFontSizing">
             <div className="playButton">
@@ -46,7 +47,8 @@ function ScrollableGameContent(){
     <>
       <div id="games"></div>
       <NavigationBar title={'Games & Web Applications'}/>
-      <HorizontalScroll>
+      <ImageBanner imagePath={'images/gamesbanner1.png'} />
+      <HorizontalScroll className="horzo">
           {renderedGames}
       </HorizontalScroll> 
 

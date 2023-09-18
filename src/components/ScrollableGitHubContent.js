@@ -23,7 +23,7 @@ const renderedGit = gitData.map((git) => {
         <img src={git.image} alt=''/>
         <div className="responsiveFontSizing">
           <div className="playButton">
-            <a href={git.url}>PLAY NOW!</a>
+            <a href={git.url}>CODE NOW!</a>
           </div>
           <h1>{git.title}</h1>
           <h2>{git.language}</h2>

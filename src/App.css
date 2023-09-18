@@ -98,8 +98,10 @@ a {
 }
 
 .responsiveFontSizing{
-  font-size: .7vw;
-  border-bottom: 2vw;
+  font-size: .9vw;
+  padding-bottom: 2vw;
+  /* border: solid 3px yellow; */
+
 }
 
 .contentBanner{
@@ -119,6 +121,15 @@ a {
   width: 90vw;
   /* border: solid 3px blue; */
   border-radius: 3vw;
+}
+
+.contentBanner div{
+  color: white;
+  font-size: 5vw;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .spacerBar{
@@ -148,7 +159,7 @@ a {
 
 .displayTiles div{
   background-color: black;
-  color: pink;
+  color: white;
   /* height: 30vw; */
   /* border-bottom: solid 3px pink;
   border-left: solid 3px pink;
@@ -164,30 +175,39 @@ a {
   object-fit: contain;
   /* border: solid 3px yellow; */
   border-radius: 2vw;
+
+}
+
+.dTGames{
+  width: 31vw;
+
 }
 
 .dTShirts{
-  width: 33vw;
+  width: 31vw;
 }
-
+/* 
 .dTVideos{
-  width: 55vw;
-}
+  width: 45vw;
+} */
 
-.dTGits{
+/* .dTGits{
   width: 55vw;
-}
+} */
 
-.iframe{
+/* .iframe{
   width: 100vw;
   height: 100%;
   object-fit: contain;
-}
+  background-color: black;
+} */
 
 .playButton{
   padding-top: 1vw;
   padding-bottom: 1vw;
 }
+
+
 
 .playButton a{
   font-size: 1.5vw;
@@ -195,4 +215,16 @@ a {
   background-color: blueviolet;
   border: solid 3px blue;
   border-radius: 1vw;
+  padding-left: 1vw;
+  padding-right: 1vw;
+}
+
+.playButton a:hover{
+  color: black;
+  background-color: pink;
+  border: solid 3px darkslategray;
+}
+
+.horzo{
+  background-color: black;
 }

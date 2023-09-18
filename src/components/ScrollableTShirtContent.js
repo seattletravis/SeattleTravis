@@ -39,7 +39,7 @@ const renderedTShirts = shirtData.map((shirt) => {
         <img src={shirt.image} alt=''/>
         <div className="responsiveFontSizing">
           <div className="playButton">
-            <a href={shirt.url}>PLAY NOW!</a>
+            <a href={shirt.url}>SHOP NOW!</a>
           </div>
           <h1>{shirt.title}</h1>
           <h2>from ${shirt.price}</h2>
