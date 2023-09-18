@@ -36,6 +36,9 @@ function App() {
         {/* <NavigationBar title={"Lets Play BubbleGum!"} />  */}
         {/* <iframe className="iframe" title="Hello World" src='https://travis.lamberte.com/bubbleGum/index.html' /> */}
         <SpacerBar />
+        <SpacerBar />
+        <SpacerBar />
+        <SpacerBar />
         <NavigationBar title={"You've reached the bottom!"} /> 
         <SpacerBar />
       </div>
