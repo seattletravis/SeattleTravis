@@ -17,8 +17,17 @@ nav {
   font-size: 2vw;
 }
 
+.navBarTitleSmallScreen{
+  padding-left: 10px;
+  font-size: 3vw;
+}
+
 .navButtons{
   font-size: 1vw;
+}
+
+.navButtonsSmallScreen{
+  font-size: 2vw;
 }
 
 
