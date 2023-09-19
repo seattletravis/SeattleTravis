@@ -116,12 +116,14 @@ a {
 
 .responsiveFontSizing{
   font-size: .75vw;
-  /* padding-bottom: 2vw; */
+  padding-bottom: 2vw;
   /* border: solid 3px yellow; */
 }
 
 .responsiveFontSizingSmallScreen{
   font-size: 1.1vw;
+  padding-bottom: 2vw;
+
 
 }
 
@@ -181,7 +183,7 @@ a {
 .displayTiles div{
   background-color: black;
   color: white;
-  /* height: 30vw; */
+  /* height: 18vw; */
   /* border-bottom: solid 3px pink;
   border-left: solid 3px pink;
   border-right: solid 3px pink;
@@ -200,9 +202,8 @@ a {
 
 .displayTiles img:hover{
   /* border: solid 3px yellow; */
+  border: solid white .2vw;
   width: 105%;
-  border: solid white 2px;
-  
 }
 
 
@@ -212,10 +213,10 @@ a {
 }
 
 .dTShirts{
-  width: 31vw;
+  width: 26vw;
 }
-/* 
-.dTVideos{
+
+/* .dTVideos{
   width: 45vw;
 } */
 
