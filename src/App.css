@@ -19,7 +19,7 @@ nav {
 
 .navBarTitleSmallScreen{
   padding-left: 10px;
-  font-size: 3vw;
+  font-size: 2.5vw;
 }
 
 .navButtons{
@@ -108,6 +108,8 @@ a {
   /* background-color: black; */
 }
 
+
+
 .background{
   background-color: black;
 }
@@ -195,6 +197,7 @@ a {
 .displayTiles img:hover{
   /* border: solid 3px yellow; */
   width: 105%;
+  border: solid white 2px;
   
 }
 

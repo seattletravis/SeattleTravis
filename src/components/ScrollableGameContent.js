@@ -46,7 +46,7 @@ function ScrollableGameContent(){
   return(
     <>
       <div id="games"></div>
-      <NavigationBar title={'Games & Web Applications'}/>
+      <NavigationBar title={'Web Apps & Games'}/>
       <ImageBanner imagePath={'images/gamesbanner3.png'} />
       <HorizontalScroll className="horzo">
           {renderedGames}
