@@ -42,8 +42,6 @@ function ScrollableGameContent(){
         <a href={game.url} target="blank">
           <img src={game.image} alt=''/>
         </a>
-
-          {/* <img src={game.image} alt=''/> */}
           <div className={isSmall ? "responsiveFontSizingSmallScreen" : "responsiveFontSizing"}>
             <div className="playButton">
               <a href={game.url} target="blank">PLAY NOW!</a>

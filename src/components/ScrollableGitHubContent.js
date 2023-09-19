@@ -31,7 +31,9 @@ const renderedGit = gitData.map((git) => {
   return(
     <React.Fragment key={git.id}>
       <div className='displayTiles'>
+      <a href={git.url}>
         <img src={git.image} alt=''/>
+      </a>
         <div className={isSmall ? "responsiveFontSizingSmallScreen" : "responsiveFontSizing"}>
           <div className="playButton">
             <a href={git.url}>CODE NOW!</a>
