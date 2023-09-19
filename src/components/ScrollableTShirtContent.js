@@ -46,7 +46,9 @@ const renderedTShirts = shirtData.map((shirt) => {
   return(
     <React.Fragment key={shirt.id}>
       <div className='displayTiles dTShirts'>
-        <img src={shirt.image} alt=''/>
+        <a href={shirt.url}>
+          <img src={shirt.image} alt=''/>
+        </a>
         <div className={isSmall ? "responsiveFontSizingSmallScreen" : "responsiveFontSizing"}>
           <div className="playButton">
             <a href={shirt.url}>SHOP NOW!</a>
