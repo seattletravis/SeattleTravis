@@ -2,8 +2,17 @@ import HorizontalScroll from "react-scroll-horizontal"
 import NavigationBar from "./NavigationBar"
 import React from "react"
 import ImageBanner from "./ImageBanner"
+import { useState } from "react"
 
 function ScollableGitHubContent(){
+
+const [isSmall, setIsSmall] = useState(window.innerWidth<1200)
+React.useEffect(() => {
+  function handleResize() {
+    setIsSmall(window.innerWidth<1200)
+}
+  window.addEventListener('resize', handleResize)
+})
 
 const gitData = [
   {id: '1', title: 'LamberteDesign.com', language: 'React, JavaScript, CSS', image: 'images/lambertedesign.png', libraries: '', url: 'https://github.com/seattletravis/LamberteDesign.git'},
@@ -23,7 +32,7 @@ const renderedGit = gitData.map((git) => {
     <React.Fragment key={git.id}>
       <div className='displayTiles'>
         <img src={git.image} alt=''/>
-        <div className="responsiveFontSizing">
+        <div className={isSmall ? "responsiveFontSizingSmallScreen" : "responsiveFontSizing"}>
           <div className="playButton">
             <a href={git.url}>CODE NOW!</a>
           </div>

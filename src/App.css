@@ -23,7 +23,7 @@ nav {
 }
 
 .navButtons{
-  font-size: 1vw;
+  font-size: 1.5vw;
 }
 
 .navButtonsSmallScreen{
@@ -115,9 +115,13 @@ a {
 }
 
 .responsiveFontSizing{
-  font-size: .9vw;
-  padding-bottom: 2vw;
+  font-size: .75vw;
+  /* padding-bottom: 2vw; */
   /* border: solid 3px yellow; */
+}
+
+.responsiveFontSizingSmallScreen{
+  font-size: 1.1vw;
 
 }
 

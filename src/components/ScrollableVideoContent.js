@@ -2,9 +2,18 @@ import HorizontalScroll from "react-scroll-horizontal"
 import NavigationBar from "./NavigationBar";
 import React from "react";
 import ImageBanner from "./ImageBanner";
+import { useState } from "react";
 
 
 function ScrollableVideoContent(){
+
+const [isSmall, setIsSmall] = useState(window.innerWidth<1200)
+React.useEffect(() => {
+  function handleResize() {
+    setIsSmall(window.innerWidth<1200)
+  }
+  window.addEventListener('resize', handleResize)
+})
 
   const videoData = [
     {id: '1', title: 'Uncha How-To Video', language: 'Python', 
@@ -58,7 +67,7 @@ function ScrollableVideoContent(){
       <React.Fragment key={video.id}>
         <div className='displayTiles dTVideos'>
           <img src={video.image} alt=''/>
-          <div className="responsiveFontSizing">
+          <div className={isSmall ? "responsiveFontSizingSmallScreen" : "responsiveFontSizing"}>
             <div className="playButton">
                 <a href={video.url}>WATCH NOW!</a>
               </div>

@@ -3,7 +3,6 @@ import React from 'react';
 import { useState } from 'react';
 
 
-
 function NavigationBar(props){
 
   const [isSmall, setIsSmall] = useState(window.innerWidth<1200)
@@ -14,9 +13,6 @@ function NavigationBar(props){
 }
     window.addEventListener('resize', handleResize)
   })
-
-
-
 
 
   const menuItems = [
