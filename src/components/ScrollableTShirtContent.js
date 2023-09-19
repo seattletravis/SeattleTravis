@@ -46,12 +46,12 @@ const renderedTShirts = shirtData.map((shirt) => {
   return(
     <React.Fragment key={shirt.id}>
       <div className='displayTiles dTShirts'>
-        <a href={shirt.url}>
+        <a href={shirt.url} target="blank">
           <img src={shirt.image} alt=''/>
         </a>
         <div className={isSmall ? "responsiveFontSizingSmallScreen" : "responsiveFontSizing"}>
           <div className="playButton">
-            <a href={shirt.url}>SHOP NOW!</a>
+            <a href={shirt.url} target="blank">SHOP NOW!</a>
           </div>
           <h1>{shirt.title}</h1>
           <h2>from ${shirt.price}</h2>

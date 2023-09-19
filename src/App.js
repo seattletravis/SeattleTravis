@@ -6,10 +6,14 @@ import ScollableGitHubContent from './components/ScrollableGitHubContent';
 import NavigationBar from './components/NavigationBar';
 import ImageBanner from './components/ImageBanner';
 import SpacerBar from './components/SpacerBar';
-
+import { useEffect } from 'react';
 
 
 function App() {
+
+  useEffect(()=>{
+    document.title = 'LamberteDesign'
+  }, []);
 
   return (
     <div>
@@ -40,6 +44,9 @@ function App() {
         <SpacerBar />
         <SpacerBar />
         <SpacerBar />
+        <SpacerBar />
+        <ImageBanner imagePath={'images/seattlebanner2.png'} />
+    
         <NavigationBar title={"You've reached the bottom!"} /> 
         <SpacerBar />
       </div>

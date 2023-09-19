@@ -66,10 +66,12 @@ React.useEffect(() => {
     return (
       <React.Fragment key={video.id}>
         <div className='displayTiles dTVideos'>
-          <img src={video.image} alt=''/>
+          <a href={video.url} target="blank">
+            <img src={video.image} alt=''/>
+          </a>
           <div className={isSmall ? "responsiveFontSizingSmallScreen" : "responsiveFontSizing"}>
             <div className="playButton">
-                <a href={video.url}>WATCH NOW!</a>
+                <a href={video.url} target="blank">WATCH NOW!</a>
               </div>
               <h1>{video.title}</h1>
               <h2>{video.language}</h2>
