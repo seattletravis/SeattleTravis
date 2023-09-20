@@ -4,7 +4,6 @@ function SpacerBar(){
     <>
       <div className="spacerBar">Scroll Divider</div>
     </>
-
   )
 }
 

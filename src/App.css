@@ -60,6 +60,9 @@ nav {
   /* border: solid 2px white */
 }
 
+.contactBanner{
+  background-color: black;
+}
 
 
 .centerContactBanner{
@@ -295,5 +298,22 @@ a {
 }
 
 .horzo{
+  background-color: black;
+}
+
+.about{
+  color: black;
+  background-color: lightgrey;
+  /* padding-left: 10vw;
+  padding-right: 10vw; */
+  padding: 5vw;
+  border: solid 2px black;
+  border-radius: 3vw;
+  font-size: 2vw;
+}
+
+.aboutOuter{
+  padding-left: 7vw;
+  padding-right: 7vw;
   background-color: black;
 }

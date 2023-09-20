@@ -8,6 +8,7 @@ import ImageBanner from './components/ImageBanner';
 import SpacerBar from './components/SpacerBar';
 import { useEffect } from 'react';
 import ContactBanner from './components/ContactBanner';
+import AboutMe from './components/AboutMe';
 
 
 function App() {
@@ -22,7 +23,7 @@ function App() {
         <div className="App">
           <NavigationBar title={"LamberteDesign"}/>
           <ImageBanner imagePath={'images/seattlebanner2.png'} />
-          <ContactBanner imagePath={'images/seattlebanner2.png'}/>
+          <ContactBanner />
         </div>
       </div>
 
@@ -37,10 +38,8 @@ function App() {
         <SpacerBar />
         <ScrollableTShirtContent />
         <SpacerBar />
-        <SpacerBar />
-        <SpacerBar />
-        <SpacerBar />
-        <SpacerBar />
+        <AboutMe />
+        <ContactBanner />
         <ImageBanner imagePath={'images/seattlebanner2.png'} />
         <NavigationBar title={"You've reached the bottom!"} /> 
         <SpacerBar />
