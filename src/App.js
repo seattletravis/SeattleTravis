@@ -28,7 +28,7 @@ function App() {
       </div>
 
       <div className='scrollBlock'>
-
+        <SpacerBar />
         <ScrollableGameContent />
         <SpacerBar />
         <ScrollableVideoContent />

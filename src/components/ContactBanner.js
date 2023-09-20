@@ -2,7 +2,7 @@ import React from 'react';
 import { FaRegFilePdf } from 'react-icons/fa'
 import { MdOutlineEmail } from 'react-icons/md'
 import { BsPersonCircle } from 'react-icons/bs'
-import { MdOutlineVideogameAsset } from 'react-icons/md'
+import { FaGithub } from 'react-icons/fa'
 import { Link } from 'react-scroll';
 
 
@@ -24,9 +24,9 @@ function ContactBanner(props){
                     </a>
                   </div>
                   <div>
-                    <Link to={'games'} smooth={true} offset={0} duration={1000}>                  
-                      <i className='icon'><MdOutlineVideogameAsset size='4vw'/></i>
-                      <h1>Games</h1>
+                    <Link to={'github'} smooth={true} offset={0} duration={1000}>                  
+                      <i className='icon'><FaGithub size='4vw'/></i>
+                      <h1>GitHub</h1>
                     </Link>
                   </div>
                   <div>
@@ -35,18 +35,13 @@ function ContactBanner(props){
                       <h1>About</h1>
                     </Link>
                   </div>
+                  
                   <div>
                     <a href='mailto:travis@lamberte.com'>
                       <i className='icon'><MdOutlineEmail size='4vw'/></i>
                       <h1>Contact</h1>
                     </a>
                   </div>
-
-
-                  {/* <div>
-                    <i className='icon'><AiOutlineForm size='4vw'/></i>
-                    <h1>Contact</h1>
-                  </div> */}
                 </li> 
           </ul>
         </div>

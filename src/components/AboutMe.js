@@ -1,17 +1,18 @@
 import NavigationBar from "./NavigationBar";
-import SpacerBar from "./SpacerBar";
+// import SpacerBar from "./SpacerBar";
 
 
 function AboutMe(){
   return(
     <>
-    <div id="about"></div>
     <NavigationBar title={"About Me"}/>
-    <SpacerBar />
+    {/* <SpacerBar /> */}
+    <div id="about"></div>
+
     <div className="aboutOuter">
 
     <div className="about">
-      <h1>About Travis Lamberte!</h1><br></br>
+      <h1>About Me - Travis Lamberte</h1><br></br>
     <p>
 
 I was born in a small town in the Yakima Valley in WA State. It remains today, a dry irrigated desert oasis in the summer and a frozen otter pop in the winter. Out of town, there's farms until one reaches the basalt plains, then there's big sky.
