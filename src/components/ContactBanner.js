@@ -20,10 +20,10 @@ function ContactBanner(props){
                       <h1>Resume</h1>
                     </a>
                   </div>
-                  <div>
+                  {/* <div>
                     <i className='icon'><BsPersonCircle size='4vw'/></i>
                     <h1>About</h1>
-                  </div>
+                  </div> */}
                   <div>
                     <a href='mailto:travis@lamberte.com'>
                       <i className='icon'><MdOutlineEmail size='4vw'/></i>

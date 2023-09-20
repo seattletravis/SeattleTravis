@@ -36,8 +36,6 @@ function App() {
         <SpacerBar />
         <SpacerBar />
         <ScrollableTShirtContent />
-        {/* <NavigationBar title={"Lets Play BubbleGum!"} />  */}
-        {/* <iframe className="iframe" title="Hello World" src='https://travis.lamberte.com/bubbleGum/index.html' /> */}
         <SpacerBar />
         <SpacerBar />
         <SpacerBar />
