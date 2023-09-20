@@ -49,12 +49,13 @@ React.useEffect(() => {
     {id: '6', title: 'Uncha Coding Video 5', language: 'Python', 
     url: 'https://youtu.be/qfmpTftg2bY', image: 'images/youtube/uncha5.png', libraries: 'rembg, tkinter, pillow, threading, os',
     type: 'video'},
-    {id: '7', title: 'Uncha Coding Video 6', language: 'Python', 
-    url: 'https://youtu.be/bzIbVodszLU', image: 'images/youtube/uncha6.png', libraries: 'rembg, tkinter, pillow, threading, os',
-    type: 'video'},
     {id: '13', title: 'Hawaii Treasure Island', language: 'Canva', 
     url: 'https://youtube.com/shorts/KFmkqGcH1Es', image: 'images/youtube/kamehameha.png', libraries: '',
     type: 'youtube short'},
+    {id: '7', title: 'Uncha Coding Video 6', language: 'Python', 
+    url: 'https://youtu.be/bzIbVodszLU', image: 'images/youtube/uncha6.png', libraries: 'rembg, tkinter, pillow, threading, os',
+    type: 'video'},
+
   ]
 
 

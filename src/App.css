@@ -57,7 +57,10 @@ nav {
   display: flex;
   padding-left: 6vw;
   padding-right: 6vw;
+  /* border: solid 2px white */
 }
+
+
 
 .centerContactBanner{
   display: flex;
