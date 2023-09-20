@@ -3,6 +3,8 @@
   padding: 0;
 }
 
+
+
 nav {
   display: flex;
   align-items: center;
@@ -30,6 +32,29 @@ nav {
   font-size: 2vw;
 }
 
+.contactLi{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 1vw;
+  background-color: black;
+  color: white;
+  font-size: .5vw;
+}
+
+.icon{
+  /* margin-left: 3vw;
+  margin-right: 3vw; */
+  padding-left: 2vw;
+  padding-right: 2vw;
+}
+
+.centerContactBanner{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
 
 ul {
   display: flex;
@@ -129,6 +154,7 @@ a {
 
 .contentBanner{
   display: flex;
+  flex-direction: row;
   justify-content: center;
   align-items: center; 
   height: auto;
@@ -136,6 +162,7 @@ a {
   padding: 1vw;
   object-fit: scale-down;
   background-color: black;
+
 
 }
 

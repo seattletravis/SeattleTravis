@@ -7,6 +7,7 @@ import NavigationBar from './components/NavigationBar';
 import ImageBanner from './components/ImageBanner';
 import SpacerBar from './components/SpacerBar';
 import { useEffect } from 'react';
+import ContactBanner from './components/ContactBanner';
 
 
 function App() {
@@ -21,21 +22,18 @@ function App() {
         <div className="App">
           <NavigationBar title={"LamberteDesign"}/>
           <ImageBanner imagePath={'images/seattlebanner2.png'} />
+          <ContactBanner imagePath={'images/seattlebanner2.png'}/>
         </div>
       </div>
 
       <div className='scrollBlock'>
-        <SpacerBar />
+
         <ScrollableGameContent />
         <SpacerBar />
-
         <ScrollableVideoContent />
         <SpacerBar />
-
         <ScollableGitHubContent />
         <SpacerBar />
-
-
         <SpacerBar />
         <ScrollableTShirtContent />
         {/* <NavigationBar title={"Lets Play BubbleGum!"} />  */}
@@ -46,7 +44,6 @@ function App() {
         <SpacerBar />
         <SpacerBar />
         <ImageBanner imagePath={'images/seattlebanner2.png'} />
-    
         <NavigationBar title={"You've reached the bottom!"} /> 
         <SpacerBar />
       </div>
