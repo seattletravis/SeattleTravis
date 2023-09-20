@@ -1,6 +1,8 @@
 import React from 'react';
-import{ FaBeer } from 'react-icons/fa'
-import { GrDocumentPdf } from 'react-icons/gr'
+import { FaRegFilePdf } from 'react-icons/fa'
+import { MdOutlineEmail } from 'react-icons/md'
+import { BsPersonCircle } from 'react-icons/bs'
+import { AiOutlineForm } from 'react-icons/ai'
 
 
 
@@ -14,10 +16,22 @@ function ContactBanner(props){
           <div className='centerContactBanner'>
           <ul>  
                 <li className='contactLi'>
-                  <h1 title="Download My Resume" className='icon'><FaBeer size='4vw'/>Resume</h1>
-                  <h1 className='icon'><FaBeer size='4vw'/>About</h1>
-                  <h1 className='icon'><FaBeer size='4vw'/>Email</h1>
-                  <h1 className='icon'><FaBeer size='4vw'/>Contact</h1>
+                  <div>
+                    <i className='icon'><FaRegFilePdf size='4vw'/></i>
+                    <h1>Resume</h1>
+                  </div>
+                  <div>
+                    <i className='icon'><BsPersonCircle size='4vw'/></i>
+                    <h1>About</h1>
+                  </div>
+                  <div>
+                    <i className='icon'><MdOutlineEmail size='4vw'/></i>
+                    <h1>Email</h1>
+                  </div>
+                  <div>
+                    <i className='icon'><AiOutlineForm size='4vw'/></i>
+                    <h1>Contact</h1>
+                  </div>
                 </li> 
           </ul>
         </div>

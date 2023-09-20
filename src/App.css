@@ -39,14 +39,24 @@ nav {
   margin: 1vw;
   background-color: black;
   color: white;
-  font-size: .5vw;
+  font-size: .8vw;
+}
+
+.contactLi div{
+  align-items: center;
+  justify-content: center;
+}
+
+.contactLi div h1{
+  display: flex;
+  justify-content: center;
+
 }
 
 .icon{
-  /* margin-left: 3vw;
-  margin-right: 3vw; */
-  padding-left: 2vw;
-  padding-right: 2vw;
+  display: flex;
+  padding-left: 6vw;
+  padding-right: 6vw;
 }
 
 .centerContactBanner{
