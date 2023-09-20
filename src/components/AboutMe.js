@@ -1,17 +1,27 @@
 import NavigationBar from "./NavigationBar";
-// import SpacerBar from "./SpacerBar";
+import { useState } from "react";
+import React from "react";
 
 
 function AboutMe(){
+
+  const [isSmall, setIsSmall] = useState(window.innerWidth<1200)
+
+  React.useEffect(() => {
+    function handleResize() {
+      setIsSmall(window.innerWidth<1200)
+}
+    window.addEventListener('resize', handleResize)
+  })
+
   return(
     <>
     <NavigationBar title={"About Me"}/>
-    {/* <SpacerBar /> */}
     <div id="about"></div>
 
     <div className="aboutOuter">
 
-    <div className="about">
+    <div className={isSmall ? "aboutSmallScreen" : "about"}>
       <h1>About Me - Travis Lamberte</h1><br></br>
     <p>
 

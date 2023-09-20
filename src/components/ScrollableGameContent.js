@@ -11,6 +11,7 @@ function ScrollableGameContent(){
   React.useEffect(() => {
     function handleResize() {
       setIsSmall(window.innerWidth<1200)
+  
 }
     window.addEventListener('resize', handleResize)
   })

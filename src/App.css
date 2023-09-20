@@ -11,7 +11,9 @@ nav {
   justify-content: space-between;
   background-color: black;
   color: white;
-  padding: 10px;
+  padding: 2vw;
+  /* padding-top: 10px;
+  padding-bottom: 10px; */
 }
 
 .navBarTitle{
@@ -21,7 +23,7 @@ nav {
 
 .navBarTitleSmallScreen{
   padding-left: 10px;
-  font-size: 2.5vw;
+  font-size: 3vw;
 }
 
 .navButtons{
@@ -263,9 +265,9 @@ a {
   width: 45vw;
 } */
 
-/* .dTGits{
-  width: 55vw;
-} */
+.dTGits{
+  width: 46vw;
+}
 
 /* .iframe{
   width: 100vw;
@@ -309,8 +311,21 @@ a {
   padding: 5vw;
   border: solid 2px black;
   border-radius: 3vw;
-  font-size: 2vw;
+  font-size: 1.5vw;
 }
+
+.aboutSmallScreen{
+  color: black;
+  background-color: lightgrey;
+  /* padding-left: 10vw;
+  padding-right: 10vw; */
+  padding: 5vw;
+  border: solid 2px black;
+  border-radius: 3vw;
+  font-size: 3vw;
+}
+
+
 
 .aboutOuter{
   padding-left: 7vw;

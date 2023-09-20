@@ -30,7 +30,7 @@ const gitData = [
 const renderedGit = gitData.map((git) => {
   return(
     <React.Fragment key={git.id}>
-      <div className='displayTiles'>
+      <div className='displayTiles dTGits'>
       <a href={git.url} target="blank">
         <img src={git.image} alt=''/>
       </a>
