@@ -61,7 +61,7 @@ const renderedTShirts = shirtData.map((shirt) => {
 return(
   <>
   <div id="tshirts"></div>
-  <NavigationBar title={'Uncle Hawaii Beach Apparel'}/>
+  <NavigationBar title={'Apparel Store!'}/>
   <ImageBanner imagePath={'images/unclehawaiibanner.png'} />
 
   <HorizontalScroll>

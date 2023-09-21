@@ -79,7 +79,7 @@ const isSmall = ScreenSmall()
   return(
     <>
       <div id="youtube"></div>
-      <NavigationBar title={'Coding Videos & Youtube Shorts'}/>
+      <NavigationBar title={'Code Videos & Shorts'}/>
       <ImageBanner imagePath={'images/youtubebanner.png'} />
       <HorizontalScroll>
       {displayVideoInfo}

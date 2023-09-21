@@ -26,7 +26,7 @@ nav {
 
 .navBarTitleSmallScreen{
   padding-left: 10px;
-  font-size: 3vw;
+  font-size: 4vw;
 }
 
 .navButtons{
@@ -34,7 +34,7 @@ nav {
 }
 
 .navButtonsSmallScreen{
-  font-size: 2vw;
+  font-size: 2.5vw;
 }
 
 .contactLi{
@@ -204,7 +204,7 @@ a {
 }
 
 .spacerBar{
-  padding-bottom: 5vw;
+  padding-bottom: 4vw;
   background-color: black;
 }
 
@@ -333,7 +333,7 @@ a {
 
 
 .aboutOuter{
-  padding-left: 7vw;
-  padding-right: 7vw;
+  padding-left: 5vw;
+  padding-right: 5vw;
   background-color: black;
 }

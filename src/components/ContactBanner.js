@@ -6,9 +6,12 @@ import { FaGithub } from 'react-icons/fa'
 import { Link } from 'react-scroll';
 
 
+
 const resume = 'resume.pdf'
 
 function ContactBanner(props){
+
+
 
   return(
     <>
@@ -19,26 +22,26 @@ function ContactBanner(props){
                 <li className='contactLi'>
                   <div>
                     <a href={resume} target='blank'>
-                      <i className='icon'><FaRegFilePdf size='4vw'/></i>
+                      <i className='icon'><FaRegFilePdf size='6vw'/></i>
                       <h1>Resume</h1>
                     </a>
                   </div>
                   <div>
                     <Link to={'github'} smooth={true} offset={0} duration={1000}>                  
-                      <i className='icon'><FaGithub size='4vw'/></i>
+                      <i className='icon'><FaGithub size='6vw'/></i>
                       <h1>GitHub</h1>
                     </Link>
                   </div>
                   <div>
                     <Link to={'about'} smooth={true} offset={0} duration={1000}>                  
-                      <i className='icon'><BsPersonCircle size='4vw'/></i>
+                      <i className='icon'><BsPersonCircle size='6vw'/></i>
                       <h1>About</h1>
                     </Link>
                   </div>
                   
                   <div>
                     <a href='mailto:travis@lamberte.com'>
-                      <i className='icon'><MdOutlineEmail size='4vw'/></i>
+                      <i className='icon'><MdOutlineEmail size='6vw'/></i>
                       <h1>Contact</h1>
                     </a>
                   </div>

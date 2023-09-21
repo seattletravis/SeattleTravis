@@ -48,7 +48,7 @@ const renderedGit = gitData.map((git) => {
   return(
     <>
       <div id='github'></div>
-      <NavigationBar title={'GitHub Projects - Open Source'}/>
+      <NavigationBar title={'GitHub Projects'}/>
       <ImageBanner imagePath={'images/githubbanner.png'} />
       <HorizontalScroll>
       {renderedGit}

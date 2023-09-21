@@ -7,5 +7,4 @@ function SpacerBar(){
   )
 }
 
-
 export default SpacerBar

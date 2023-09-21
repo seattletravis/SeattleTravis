@@ -8,6 +8,4 @@ function IntroductionBar(){
 }
 
 
-
-
 export default IntroductionBar;
