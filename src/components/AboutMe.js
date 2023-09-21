@@ -15,6 +15,10 @@ function AboutMe(){
 
     <div className={isSmall ? "aboutSmallScreen" : "about"}>
       <h1>About Me - Travis Lamberte</h1><br></br>
+      <p>
+
+I'm a Frontend Software Engineer currently looking for work the the tech industry. I don't have a CS degree or work experience yet... but I know my code. If you know of an opportunity please email me. Thanks. 
+</p><br></br>
     <p>
 
 I was born in a small town in the Yakima Valley in WA State. It remains today, a dry irrigated desert oasis in the summer and a frozen otter pop in the winter. Out of town, there's farms until one reaches the basalt plains, then there's big sky.
