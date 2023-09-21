@@ -5,6 +5,7 @@
 
 body{
   overflow-x: hidden;
+  /* overflow-y: hidden; */
 }
 
 
@@ -154,10 +155,14 @@ a {
   /* background-color: black; */
 }
 
-
-
 .background{
   background-color: black;
+}
+
+.scrollBlock{
+  /* width: 98vw; */
+  height: 40vw;
+  object-fit: scale-down;
 }
 
 .responsiveFontSizing{
@@ -169,8 +174,6 @@ a {
 .responsiveFontSizingSmallScreen{
   font-size: 1.1vw;
   padding-bottom: 2vw;
-
-
 }
 
 .contentBanner{
@@ -179,12 +182,10 @@ a {
   justify-content: center;
   align-items: center; 
   height: auto;
-  width: 99vw;
+  /* width: 99vw; */
   padding: 1vw;
   object-fit: scale-down;
   background-color: black;
-
-
 }
 
 .contentBanner img{
@@ -206,12 +207,6 @@ a {
 .spacerBar{
   padding-bottom: 4vw;
   background-color: black;
-}
-
-.scrollBlock{
-  width: 99vw;
-  height: 40vw;
-  object-fit: scale-down;
 }
 
 .displayTiles{
@@ -256,12 +251,12 @@ a {
 
 
 .dTGames{
-  width: 31vw;
+  width: 45vw;
 
 }
 
 .dTShirts{
-  width: 26vw;
+  width: 28vw;
 }
 
 /* .dTVideos{
