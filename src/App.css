@@ -284,7 +284,9 @@ a {
   padding-bottom: 1vw;
 }
 
-
+.hideButton{
+  display: none;
+}
 
 .playButton a{
   font-size: 1.5vw;

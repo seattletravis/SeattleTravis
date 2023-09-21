@@ -2,17 +2,11 @@ import HorizontalScroll from "react-scroll-horizontal"
 import NavigationBar from "./NavigationBar"
 import React from "react"
 import ImageBanner from "./ImageBanner"
-import { useState } from "react"
+import ScreenSmall from "../hooks/ScreenSmall"
 
 function ScrollableTShirtContent(){
 
-  const [isSmall, setIsSmall] = useState(window.innerWidth<1200)
-  React.useEffect(() => {
-    function handleResize() {
-      setIsSmall(window.innerWidth<1200)
-  }
-    window.addEventListener('resize', handleResize)
-  })
+  const isSmall = ScreenSmall()
 
 const shirtData = [
   {id: '1', title: 'Hawaii in Space', price: '', url: 'https://www.unclehawaii.com/listing/kihei-hawaii-astronaut-appar?product=369', 
@@ -50,8 +44,10 @@ const renderedTShirts = shirtData.map((shirt) => {
           <img src={shirt.image} alt=''/>
         </a>
         <div className={isSmall ? "responsiveFontSizingSmallScreen" : "responsiveFontSizing"}>
-          <div className="playButton">
-            <a href={shirt.url} target="blank">SHOP NOW!</a>
+          <div className={isSmall ? "hideButton" : ''}>
+            <div className="playButton">
+              <a href={shirt.url} target="blank">SHOP NOW!</a>
+            </div>
           </div>
           <h1>{shirt.title}</h1>
           <h2>{shirt.variety}</h2>

@@ -2,20 +2,13 @@ import HorizontalScroll from "react-scroll-horizontal";
 import NavigationBar from "./NavigationBar";
 import React from "react";
 import ImageBanner from "./ImageBanner";
-import { useState } from "react";
+// import { useState } from "react";
+import ScreenSmall from "../hooks/ScreenSmall";
+
 
 function ScrollableGameContent(){
 
-  const [isSmall, setIsSmall] = useState(window.innerWidth<1200)
-
-  React.useEffect(() => {
-    function handleResize() {
-      setIsSmall(window.innerWidth<1200)
-  
-}
-    window.addEventListener('resize', handleResize)
-  })
-
+  const isSmall = ScreenSmall()
 
   const gameData = [
     {id: '1', title: 'Tilt3D Single Player', language: 'JavaScript, HTML, CSS', 
@@ -44,8 +37,10 @@ function ScrollableGameContent(){
           <img src={game.image} alt=''/>
         </a>
           <div className={isSmall ? "responsiveFontSizingSmallScreen" : "responsiveFontSizing"}>
-            <div className="playButton">
-              <a href={game.url} target="blank">PLAY NOW!</a>
+            <div className={isSmall ? "hideButton" : ''}>
+              <div className="playButton">
+                <a href={game.url} target="blank">PLAY NOW!</a>
+              </div>
             </div>
             <h1>{game.title}</h1>
             <h2>{game.language}</h2>
