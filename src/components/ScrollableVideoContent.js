@@ -2,12 +2,12 @@ import HorizontalScroll from "react-scroll-horizontal"
 import NavigationBar from "./NavigationBar";
 import React from "react";
 import ImageBanner from "./ImageBanner";
-import ScreenSmall from "../hooks/ScreenSmall";
+import useScreenSmall from "../hooks/useScreenSmall";
 
 
 function ScrollableVideoContent(){
 
-const isSmall = ScreenSmall()
+const isSmall = useScreenSmall()
 
   const videoData = [
     {id: '1', title: 'Uncha How-To Video', language: 'Python', 

@@ -1,6 +1,3 @@
-
-
-
 function ContentBanner(props){
 
   return(
@@ -11,8 +8,6 @@ function ContentBanner(props){
     </div>
   )
 }
-
-
 
 
 export default ContentBanner;

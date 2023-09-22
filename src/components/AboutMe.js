@@ -1,10 +1,10 @@
 import NavigationBar from "./NavigationBar";
 import React from "react";
-import ScreenSmall from "../hooks/ScreenSmall";
+import useScreenSmall from "../hooks/useScreenSmall";
 
 function AboutMe(){
 
-  const isSmall = ScreenSmall()
+const isSmall = useScreenSmall()
 
   return(
     <>

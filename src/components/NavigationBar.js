@@ -1,10 +1,10 @@
 import { Link } from 'react-scroll';
 import React from 'react';
-import ScreenSmall from '../hooks/ScreenSmall';
+import useScreenSmall from '../hooks/useScreenSmall';
 
 function NavigationBar(props){
 
-  const isSmall = ScreenSmall()
+  const isSmall = useScreenSmall()
 
   const menuItems = [
     {id: 1, title: 'home'},

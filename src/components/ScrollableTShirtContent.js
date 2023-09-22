@@ -2,11 +2,11 @@ import HorizontalScroll from "react-scroll-horizontal"
 import NavigationBar from "./NavigationBar"
 import React from "react"
 import ImageBanner from "./ImageBanner"
-import ScreenSmall from "../hooks/ScreenSmall"
+import useScreenSmall from "../hooks/useScreenSmall"
 
 function ScrollableTShirtContent(){
 
-  const isSmall = ScreenSmall()
+  const isSmall = useScreenSmall()
 
 const shirtData = [
   {id: '1', title: 'Hawaii in Space', price: '', url: 'https://www.unclehawaii.com/listing/kihei-hawaii-astronaut-appar?product=369', 

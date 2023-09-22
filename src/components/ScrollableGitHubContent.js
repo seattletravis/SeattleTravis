@@ -2,11 +2,11 @@ import HorizontalScroll from "react-scroll-horizontal"
 import NavigationBar from "./NavigationBar"
 import React from "react"
 import ImageBanner from "./ImageBanner"
-import ScreenSmall from "../hooks/ScreenSmall"
+import useScreenSmall from "../hooks/useScreenSmall"
 
 function ScollableGitHubContent(){
 
-const isSmall = ScreenSmall()
+const isSmall = useScreenSmall()
 
 const gitData = [
   {id: '1', title: 'LamberteDesign.com', language: 'React, JavaScript, CSS', image: 'images/youtube/lamberte.png', libraries: '', url: 'https://github.com/seattletravis/LamberteDesign.git'},

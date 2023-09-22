@@ -2,13 +2,11 @@ import HorizontalScroll from "react-scroll-horizontal";
 import NavigationBar from "./NavigationBar";
 import React from "react";
 import ImageBanner from "./ImageBanner";
-// import { useState } from "react";
-import ScreenSmall from "../hooks/ScreenSmall";
-
+import useScreenSmall from "../hooks/useScreenSmall";
 
 function ScrollableGameContent(){
 
-  const isSmall = ScreenSmall()
+  const isSmall = useScreenSmall()
 
   const gameData = [
     {id: '1', title: 'Tilt3D Single Player', language: 'JavaScript, HTML, CSS', 

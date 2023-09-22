@@ -2,7 +2,7 @@ import { useState } from "react";
 import React from "react";
 
 
-function ScreenSmall(){
+function useScreenSmall(){
 
   const [isSmall, setIsSmall] = useState(window.innerWidth<1200)
 
@@ -21,4 +21,4 @@ function ScreenSmall(){
 
 
 
-export default ScreenSmall;
+export default useScreenSmall;
