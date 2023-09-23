@@ -6,12 +6,9 @@ import { FaGithub } from 'react-icons/fa'
 import { Link } from 'react-scroll';
 
 
-
 const resume = 'resume.pdf'
 
-function ContactBanner(props){
-
-
+function ContactBanner(){
 
   return(
     <>

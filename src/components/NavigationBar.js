@@ -2,7 +2,7 @@ import { Link } from 'react-scroll';
 import React from 'react';
 import useScreenSmall from '../hooks/useScreenSmall';
 
-function NavigationBar(props){
+function NavigationBar({title}){
 
   const isSmall = useScreenSmall()
 
@@ -17,7 +17,7 @@ function NavigationBar(props){
 return(
     <>
       <nav>
-        <h1 className={isSmall ? 'navBarTitleSmallScreen' : 'navBarTitle'}>{props.title}</h1>
+        <h1 className={isSmall ? 'navBarTitleSmallScreen' : 'navBarTitle'}>{title}</h1>
           <ul>
             {menuItems.map(menu => (
               <li key={menu.id} className={isSmall ? 'navButtonsSmallScreen' : 'navButtons'}>

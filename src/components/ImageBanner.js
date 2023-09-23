@@ -1,8 +1,8 @@
-function ImageBanner(props){
+function ImageBanner({imagePath}){
 
   return(
     <div className='contentBanner'>
-      <img src={props.imagePath} alt=''/>
+      <img src={imagePath} alt=''/>
     </div>
   )
 }
