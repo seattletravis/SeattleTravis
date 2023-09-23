@@ -17,10 +17,45 @@ const isSmall = useScreenSmall()
       <h1>About Me - Travis Lamberte</h1><br></br>
       <p>
 
-I'm a Frontend Software Engineer currently looking for work the the tech industry. I don't have a CS degree or work experience yet... but I know my code. If you know of an opportunity please email me. Thanks. 
+      <b>Objective:</b><p></p>
+Seeking position as a Jr. software developer, in a fast-paced environment where I can use my skills in frontend web development with React, backend Firebase cloud knowledge, React-Native mobile device development, and hands on automated software testing skills to become an important part of a larger project.
 </p><br></br>
     <p>
+<b>Summary:</b>
+<p></p>
+Strong experience producing documented, clean, well-written, best practice code with massive scalability while at the same time ensuring the code can be easily refactored into mobile applications.
+<p></p><br></br>
+Having 5 years of personal experience building software in python, React, and JavaScript, for web applications that are up and online.
+<p></p><br></br>
+Seasoned React developer creating clean components with well thought-out and placed hooks, to make the best use of the state and props systems.
+<p></p> <br></br>
+Strong background in JavaScript, HTML, and CSS, with a focus on full multi-page, web application builds, with strong emphasis on visual design, interactivity, responsiveness, and functionality.
+<p></p> <br></br>
+Work closely with design, organization, server-side hosting, automated software testing, and deployment, to ensure web applications are deployed on time and being well maintained.
+</p><br></br>
+    <p>
+<b>Skills:</b>
+<p></p>
+C#, React, Python, JavaScript, HTML, CSS, Chat-GPT, Docker, Command-Line-Git, GitHub, Visual Studio Code, Windows, Terminal, Linux, MS Office, Excel, Math, & the ability to self-study and learn new technologies.
+</p><br></br>
+    <p>
+<b>Education:</b>
+<p></p> 	
+	Foundational C# with Microsoft 	Sep 2023<p></p>
+	Microsoft Learn
+  </p><br></br>
+    <p>
+	Modern React with Redux, React three fiber [2023]	July 2023<p></p>
+	Udemy.com	
+  </p><br></br>
+    <p>
+	Bachelor of Science in Math and Chemistry	June 2007<p></p>
+		Central Washington University, Ellensburg, WA
 
+    </p><br></br>
+<br></br>
+    <p>
+<b>More About Me</b> <p></p> 
 I was born in a small town in the Yakima Valley in WA State. It remains today, a dry irrigated desert oasis in the summer and a frozen otter pop in the winter. Out of town, there's farms until one reaches the basalt plains, then there's big sky.
 </p><br></br>
 <p>
