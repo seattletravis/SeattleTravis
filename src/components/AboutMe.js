@@ -3,7 +3,7 @@ import React from "react";
 import useScreenSmall from "../hooks/useScreenSmall";
 
 function AboutMe(){
-
+  
 const isSmall = useScreenSmall()
 
   return(
