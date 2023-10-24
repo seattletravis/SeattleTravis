@@ -261,12 +261,13 @@ a {
   object-fit: contain;
   /* border: solid 3px yellow; */
   border-radius: 2vw;
+  transition: all 150ms ease-out 150ms;
 }
 
 .displayTiles img:hover{
   /* border: solid 3px yellow; */
   border: solid white .2vw;
-  width: 105%;
+  width: 102%;
 }
 
 

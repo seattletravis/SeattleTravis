@@ -11,10 +11,10 @@ function ScrollableGameContent(){
   const gameData = [
     {id: '1', title: 'Tilt3D Single Player', language: 'JavaScript, HTML, CSS', 
     url: 'https://travis.lamberte.com/tilt3dSinglePlayer/index.html', image: 'images/games/tilt3d1.png', libraries: 'ThreeJS, CannonES'},
-    {id: '2', title: 'Tilt3D Multi Player', language: 'JavaScript, HTML, CSS', 
-    url: 'https://travis.lamberte.com/tilt3dMultiPlayer/index.html', image: 'images/games/tilt3d2.png', libraries: 'ThreeJS, CannonES'},
     {id: '3', title: 'Bubble Gum Game', language: 'JavaScript, HTML, CSS', 
     url: 'https://travis.lamberte.com/bubbleGum/index.html', image: 'images/games/gum.png', libraries: 'ThreeJS'},
+    {id: '2', title: 'Tilt3D Multi Player', language: 'JavaScript, HTML, CSS', 
+    url: 'https://travis.lamberte.com/tilt3dMultiPlayer/index.html', image: 'images/games/tilt3d2.png', libraries: 'ThreeJS, CannonES'},
     {id: '4', title: "Beemo's Date & Time Page", language: 'JavaScript, HTML, CSS', 
     url: 'https://travis.lamberte.com/clock/index.html', image: 'images/games/beemo.png', libraries: ''},
     {id: '5', title: "Orbits", language: 'JavaScript, HTML, CSS', 

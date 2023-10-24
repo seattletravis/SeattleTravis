@@ -9,9 +9,10 @@ function ScollableGitHubContent(){
 const isSmall = useScreenSmall()
 
 const gitData = [
-  {id: '1', title: 'LamberteDesign.com', language: 'React, JavaScript, CSS', image: 'images/youtube/lamberte.png', libraries: '', url: 'https://github.com/seattletravis/LamberteDesign.git'},
+  {id: '1', title: 'LamberteDesign.com', language: 'React, JavaScript, CSS', image: 'images/youtube/lamberte.png', libraries: '', url: 'https://github.com/seattletravis/LamberteDesign'},
   {id: '2', title: 'Tilt3D Single Player', language: 'JavaScript, HTML, CSS', image: 'images/youtube/tilt3d1.png', libraries: 'ThreeJS, CannonES', url: 'https://github.com/seattletravis/Tilt3DSinglePlayer.git'},
   {id: '3', title: 'Tilt3D Multi Player', language: 'JavaScript, HTML, CSS', image: 'images/youtube/tilt3d2.png', libraries: 'ThreeJS, Cannon ES', url: 'https://github.com/seattletravis/Tilt3DMultiPlayer.git'},
+  {id: '10', title: 'Little Lemon Website', language: 'React, JavaScript, CSS', image: 'images/youtube/lemon.png', libraries: '', url: 'https://github.com/seattletravis/little-lemon'},
   {id: '4', title: 'Uncha Software Part 1', language: 'Python', image: 'images/youtube/uncha1.png', libraries: 'rembg, tkinter, threading, pillow, os', url: 'https://github.com/seattletravis/bg_remover_Part_1.git'},
   {id: '5', title: 'Uncha Software Part 2', language: 'Python', image: 'images/youtube/uncha2.png', libraries: 'rembg, tkinter, threading, pillow, os', url: 'https://github.com/seattletravis/bg_remover_Part_2.git'},
   {id: '6', title: 'Uncha Software Part 3', language: 'Python', image: 'images/youtube/uncha3.png', libraries: 'rembg, tkinter, threading, pillow, os', url: 'https://github.com/seattletravis/bg_remover_Part_3.git'},
