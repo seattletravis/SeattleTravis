@@ -9,6 +9,7 @@ import SpacerBar from './components/SpacerBar';
 import { useEffect } from 'react';
 import ContactBanner from './components/ContactBanner';
 import AboutMe from './components/AboutMe';
+import Update from './components/Update'
 
 
 
@@ -23,6 +24,7 @@ function App() {
       <div className='background' id='home'>
         <div className="App">
           <NavigationBar title={"LamberteDesign"}/>
+          <Update />
           <ImageBanner imagePath={'images/seattlebanner2.png'} />
           <ContactBanner />
         </div>

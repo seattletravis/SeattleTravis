@@ -178,7 +178,7 @@ a {
 
 .contentBanner{
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
   align-items: center; 
   height: auto;
@@ -186,6 +186,7 @@ a {
   padding: 1vw;
   object-fit: scale-down;
   background-color: black;
+
 }
 
 .contentBanner img{
@@ -325,10 +326,15 @@ a {
   font-size: 3vw;
 }
 
-
-
 .aboutOuter{
   padding-left: 5vw;
   padding-right: 5vw;
   background-color: black;
+}
+
+.update {
+  color: white;
+  padding-left: 5vw;
+  padding-bottom: 1vw;
+  font-size: 1.5vw;
 }
