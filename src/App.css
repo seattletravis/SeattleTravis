@@ -32,10 +32,29 @@ nav {
 
 .navButtons{
   font-size: 1.5vw;
+  /* transition: background-color 2s ease-out 100ms; */
+  transition: all 100ms ease-out 100ms
+
+}
+
+.navButtons:hover {
+  background-color: rgb(39, 38, 38);
+  padding: 0vw .5vw 0vw .5vw;
+  border: solid white 1px;
+  border-radius: 1vw;
+  
 }
 
 .navButtonsSmallScreen{
   font-size: 2.5vw;
+  transition: all 100ms ease-out 100ms
+}
+
+.navButtonsSmallScreen:hover {
+  background-color: rgb(39, 38, 38);
+  padding: 0vw 1vw 0vw 1vw;
+  border: solid white 1px;
+  border-radius: 2vw;
 }
 
 .contactLi{
