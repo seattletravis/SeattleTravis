@@ -2,11 +2,13 @@
   margin: 0;
   padding: 0;
   background-color: black;
+
 }
 
 body{
   overflow-x: hidden;
   /* overflow-y: hidden; */
+
 }
 
 
@@ -38,7 +40,7 @@ nav {
 }
 
 .navButtons:hover {
-  background-color: rgb(17, 223, 51);
+  background-color: rgb(176, 199, 180);
   padding: 0.1vw .5vw 0.1vw .5vw;
   border: solid white 2px;
   border-radius: 1vw;
@@ -52,7 +54,7 @@ nav {
 }
 
 .arrows:hover {
-  background-color: rgb(17, 223, 51);
+  background-color: rgb(176, 199, 180);
   padding: .1vw .5vw .1vw .5vw;
   border: solid white 2px;
   border-radius: 3vw;
@@ -66,7 +68,7 @@ nav {
 }
 
 .arrowsSmallScreen:hover {
-  background-color: rgb(17, 223, 51);
+  background-color: rgb(176, 199, 180);
   padding: .1vw .5vw .1vw .5vw;
   border: solid white 2px;
   border-radius: 4vw;
@@ -80,7 +82,7 @@ nav {
 }
 
 .navButtonsSmallScreen:hover {
-  background-color: rgb(17, 223, 51);
+  background-color: rgb(176, 199, 180);
   padding: 0.1vw .5vw 0vw .5vw;
   border: solid white 2px;
   border-radius: 2vw;
@@ -92,7 +94,7 @@ nav {
   align-items: center;
   justify-content: space-between;
   margin: 1vw;
-  background-color: black;
+  /* background-color: black; */
   color: white;
   font-size: .8vw;
 }
@@ -110,14 +112,25 @@ nav {
 
 .icon{
   display: flex;
-  padding-left: 6vw;
-  padding-right: 6vw;
-  /* border: solid 2px white */
 }
 
-.contactBanner{
-  background-color: black;
+
+.iconDiv {
+  display: flex;
+  flex-direction: column;
+  margin-left: 6vw;
+  margin-right: 6vw;
+  padding: 1.5vw;
+  transition: all 100ms ease-out 100ms
 }
+
+.iconDiv:hover{
+  padding: 0vw .5vw 0vw .5vw;
+  border: solid white .25vw;
+  border-radius: 5vw;
+  padding: 1.5vw;
+}
+
 
 
 .centerContactBanner{
@@ -341,7 +354,7 @@ a {
 }
 
 .playButton a:hover{
-  background-color: rgb(17, 223, 51);
+  background-color: rgb(176, 199, 180);
   padding: 0.1vw .5vw 0.1vw .5vw;
   border: solid white 2px;
   border-radius: 4vw;

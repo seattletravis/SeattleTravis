@@ -29,8 +29,6 @@ function ScrollableGameContent(){
     url: 'https://travis.lamberte.com/throwback90s/index.html', image: 'images/games/throwback.png', libraries: ''},
     {id: '7', title: 'Tetrominos', language: 'JavaScript, HTML, CSS', 
     url: 'https://travis.lamberte.com/tetromino/index.html', image: 'images/games/tetro.png', libraries: ''},
-    
-
   ]
 
   const renderedGames = gameData.map((game) => {
@@ -55,20 +53,6 @@ function ScrollableGameContent(){
     );
   });
 
-  // PREVIOUS VERSION OF CODE WITH HORIZONTAL SCROLL USING MOUSE WHEEL
-  // return(
-  //   <>
-  //     <div id="games"></div>
-  //     <NavigationBar title={'Web Apps & Games'}/>
-  //     <ImageBanner imagePath={'images/gamesbanner3.png'} />
-  //     <HorizontalScroll className="horzo">
-  //         {renderedGames}
-  //     </HorizontalScroll> 
-  //   </>
-  // )
-//    END PREVIOUS
-
-
   return (
     <>
     <div id="games"></div>
@@ -81,10 +65,5 @@ function ScrollableGameContent(){
     </>
   );
 }
-
-
-
-
-
 
 export default ScrollableGameContent;
