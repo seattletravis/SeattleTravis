@@ -1,11 +1,13 @@
-import HorizontalScroll from "react-scroll-horizontal";
+// import HorizontalScroll from "react-scroll-horizontal";
 import NavigationBar from "./NavigationBar";
 import React from "react";
 import ImageBanner from "./ImageBanner";
 import useScreenSmall from "../hooks/useScreenSmall";
-
-import { ScrollMenu, VisibilityContext, Arrow } from 'react-horizontal-scrolling-menu';
+import { ScrollMenu, VisibilityContext } from 'react-horizontal-scrolling-menu';
 import "react-horizontal-scrolling-menu/dist/styles.css";
+import LeftArrow from './LeftArrow';
+import RightArrow from './RightArrow';
+
 
 
 function ScrollableGameContent(){
@@ -53,7 +55,7 @@ function ScrollableGameContent(){
     );
   });
 
-  
+  // PREVIOUS VERSION OF CODE WITH HORIZONTAL SCROLL USING MOUSE WHEEL
   // return(
   //   <>
   //     <div id="games"></div>
@@ -62,64 +64,21 @@ function ScrollableGameContent(){
   //     <HorizontalScroll className="horzo">
   //         {renderedGames}
   //     </HorizontalScroll> 
-
   //   </>
   // )
-
-
-  function Arrow({
-    children,
-    disabled,
-    onClick
-  }) {
-    return (
-      <button
-        disabled={disabled}
-        onClick={onClick}
-        style={{
-          cursor: "pointer",
-          display: "flex",
-          flexDirection: "column",
-          justifyContent: "center",
-          right: "1%",
-          opacity: disabled ? "0" : "1",
-          userSelect: "none"
-        }}
-      >
-        {children}
-      </button>
-    );
-  }
-
-  function LeftArrow() {
-    const { isFirstItemVisible, scrollPrev } =
-      React.useContext(VisibilityContext);
-
-    return (
-      <Arrow disabled={isFirstItemVisible} onClick={() => scrollPrev()}>
-        Left
-      </Arrow>
-    );
-  }
-
-  function RightArrow() {
-    const { isLastItemVisible, scrollNext } = React.useContext(VisibilityContext);
-
-    return (
-      <Arrow disabled={isLastItemVisible} onClick={() => scrollNext()}>
-        Right
-      </Arrow>
-    );
-  }
+//    END PREVIOUS
 
 
   return (
-    <ScrollMenu LeftArrow={LeftArrow} RightArrow={RightArrow}>
-      {/* {items.map(({ id }) => (
-        {renderedGames}
-      ))} */}
+    <>
+    <div id="games"></div>
+    <NavigationBar title={'Web Apps & Games'}/>
+    <ImageBanner imagePath={'images/gamesbanner3.png'} />
+
+    <ScrollMenu className="scrollMenu" LeftArrow={LeftArrow} RightArrow={RightArrow}>
       {renderedGames}
     </ScrollMenu>
+    </>
   );
 }
 
