@@ -3,6 +3,14 @@ import NavigationBar from "./NavigationBar"
 import React from "react"
 import ImageBanner from "./ImageBanner"
 import useScreenSmall from "../hooks/useScreenSmall"
+import "react-horizontal-scrolling-menu/dist/styles.css";
+import { ScrollMenu } from 'react-horizontal-scrolling-menu';
+
+import LeftArrow from './LeftArrow';
+import RightArrow from './RightArrow';
+
+//style
+import "../App.css"
 
 function ScrollableTShirtContent(){
 
@@ -59,14 +67,22 @@ const renderedTShirts = shirtData.map((shirt) => {
 
 
 return(
+  // <>
+  // <div id="tshirts"></div>
+  // <NavigationBar title={'Apparel Store!'}/>
+  // <ImageBanner imagePath={'images/unclehawaiibanner.png'} />
+  // <HorizontalScroll>
+  //   {renderedTShirts}
+  // </HorizontalScroll>
+  // </>
+
   <>
   <div id="tshirts"></div>
-  <NavigationBar title={'Apparel Store!'}/>
+  <NavigationBar title={'Shop Beach Apparel'}/>
   <ImageBanner imagePath={'images/unclehawaiibanner.png'} />
-
-  <HorizontalScroll>
+  <ScrollMenu className="scrollMenu" LeftArrow={LeftArrow} RightArrow={RightArrow}>
     {renderedTShirts}
-  </HorizontalScroll>
+  </ScrollMenu>
   </>
 )
 }
