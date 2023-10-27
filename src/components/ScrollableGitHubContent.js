@@ -1,4 +1,3 @@
-import HorizontalScroll from "react-scroll-horizontal"
 import NavigationBar from "./NavigationBar"
 import React from "react"
 import ImageBanner from "./ImageBanner"
@@ -49,14 +48,6 @@ const renderedGit = gitData.map((git) => {
 
 
   return(
-    // <>
-    //   <div id='github'></div>
-    //   <NavigationBar title={'GitHub Projects'}/>
-    //   <ImageBanner imagePath={'images/githubbanner.png'} />
-    //   <HorizontalScroll>
-    //   {renderedGit}
-    //   </HorizontalScroll>   
-    // </>
     <>
     <div id="github"></div>
     <NavigationBar title={'GitHub Projects'}/>
@@ -65,8 +56,6 @@ const renderedGit = gitData.map((git) => {
       {renderedGit}
     </ScrollMenu>
     </>
-
-
   )
 
 }
