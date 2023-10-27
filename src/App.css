@@ -326,9 +326,10 @@ a {
   width: 28vw;
 }
 
-/* .dTVideos{
-  width: 45vw;
-} */
+.dTVideos{
+  width: 38vw;
+  height: 32vw;
+}
 
 .dTGits{
   width: 40vw;

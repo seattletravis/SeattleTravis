@@ -1,8 +1,10 @@
-import HorizontalScroll from "react-scroll-horizontal"
 import NavigationBar from "./NavigationBar";
 import React from "react";
 import ImageBanner from "./ImageBanner";
 import useScreenSmall from "../hooks/useScreenSmall";
+import { ScrollMenu } from 'react-horizontal-scrolling-menu'
+import LeftArrow from './LeftArrow'
+import RightArrow from './RightArrow'
 
 
 function ScrollableVideoContent(){
@@ -53,7 +55,6 @@ const isSmall = useScreenSmall()
 
   ]
 
-
   const displayVideoInfo = videoData.map((video) => {
     return (
       <React.Fragment key={video.id}>
@@ -79,12 +80,12 @@ const isSmall = useScreenSmall()
   
   return(
     <>
-      <div id="youtube"></div>
-      <NavigationBar title={'Code Videos & Shorts'}/>
-      <ImageBanner imagePath={'images/youtubebanner.png'} />
-      <HorizontalScroll>
+    <div id="youtube"></div>
+    <NavigationBar title={'Youtube Coding & Design'}/>
+    <ImageBanner imagePath={'images/youtubebanner.png'} />
+    <ScrollMenu className="scrollMenu" LeftArrow={LeftArrow} RightArrow={RightArrow}>
       {displayVideoInfo}
-      </HorizontalScroll> 
+    </ScrollMenu>
     </>
   )
 

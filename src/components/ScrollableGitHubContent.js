@@ -46,7 +46,6 @@ const renderedGit = gitData.map((git) => {
   )
 }) 
 
-
   return(
     <>
     <div id="github"></div>
@@ -57,7 +56,6 @@ const renderedGit = gitData.map((git) => {
     </ScrollMenu>
     </>
   )
-
 }
 
 export default ScollableGitHubContent;
