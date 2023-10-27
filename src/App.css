@@ -1,13 +1,14 @@
 * {
   margin: 0;
   padding: 0;
-  background-color: black;
+  /* background-color: black; */
 
 }
 
 body{
   overflow-x: hidden;
   /* overflow-y: hidden; */
+  background-color: black;
 
 }
 
@@ -50,6 +51,7 @@ nav {
 .arrows {
   padding: .1vw .5vw .1vw .5vw;
   font-size: 5vw;
+  background-color: black;
   transition: all 100ms ease-out 100ms
 }
 
@@ -315,7 +317,8 @@ a {
 
 
 .dTGames{
-  width: 45vw;
+  width: 40vw;
+  height: 33vw;
 
 }
 
@@ -328,7 +331,8 @@ a {
 } */
 
 .dTGits{
-  width: 46vw;
+  width: 40vw;
+  height: 30vw;
 }
 
 /* .iframe{

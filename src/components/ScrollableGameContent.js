@@ -1,4 +1,3 @@
-// import HorizontalScroll from "react-scroll-horizontal";
 import NavigationBar from "./NavigationBar";
 import React from "react";
 import ImageBanner from "./ImageBanner";
@@ -7,7 +6,6 @@ import { ScrollMenu, VisibilityContext } from 'react-horizontal-scrolling-menu';
 import "react-horizontal-scrolling-menu/dist/styles.css";
 import LeftArrow from './LeftArrow';
 import RightArrow from './RightArrow';
-
 
 
 function ScrollableGameContent(){
@@ -58,7 +56,6 @@ function ScrollableGameContent(){
     <div id="games"></div>
     <NavigationBar title={'Web Apps & Games'}/>
     <ImageBanner imagePath={'images/gamesbanner3.png'} />
-
     <ScrollMenu className="scrollMenu" LeftArrow={LeftArrow} RightArrow={RightArrow}>
       {renderedGames}
     </ScrollMenu>

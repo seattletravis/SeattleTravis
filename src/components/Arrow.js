@@ -19,7 +19,8 @@ export default function Arrow({
         border: "black",
         userSelect: "none",
         color: "white",
-        fontSize: "5vw"
+        fontSize: "5vw",
+        backgroundColor: "black"
       }}
     >
       {children}

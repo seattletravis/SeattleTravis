@@ -3,6 +3,9 @@ import NavigationBar from "./NavigationBar"
 import React from "react"
 import ImageBanner from "./ImageBanner"
 import useScreenSmall from "../hooks/useScreenSmall"
+import { ScrollMenu } from 'react-horizontal-scrolling-menu'
+import LeftArrow from './LeftArrow'
+import RightArrow from './RightArrow'
 
 function ScollableGitHubContent(){
 
@@ -19,7 +22,6 @@ const gitData = [
   {id: '7', title: 'Uncha Software Part 4', language: 'Python', image: 'images/youtube/uncha4.png', libraries: 'rembg, tkinter, threading, pillow, os', url: 'https://github.com/seattletravis/bg_remover_Part_4.git'},
   {id: '8', title: 'Uncha Software Part 5', language: 'Python', image: 'images/youtube/uncha5.png', libraries: 'rembg, tkinter, threading, pillow, os', url: 'https://github.com/seattletravis/bg_remover_Part_5.git'},
   {id: '9', title: 'Uncha Software Part 6', language: 'Python', image: 'images/youtube/uncha6.png', libraries: 'rembg, tkinter, threading, pillow, os', url: 'https://github.com/seattletravis/bg_remover_Part_6.git'},
-
 ]
 
 const renderedGit = gitData.map((git) => {
@@ -47,14 +49,23 @@ const renderedGit = gitData.map((git) => {
 
 
   return(
+    // <>
+    //   <div id='github'></div>
+    //   <NavigationBar title={'GitHub Projects'}/>
+    //   <ImageBanner imagePath={'images/githubbanner.png'} />
+    //   <HorizontalScroll>
+    //   {renderedGit}
+    //   </HorizontalScroll>   
+    // </>
     <>
-      <div id='github'></div>
-      <NavigationBar title={'GitHub Projects'}/>
-      <ImageBanner imagePath={'images/githubbanner.png'} />
-      <HorizontalScroll>
+    <div id="github"></div>
+    <NavigationBar title={'GitHub Projects'}/>
+    <ImageBanner imagePath={'images/githubbanner.png'} />
+    <ScrollMenu className="scrollMenu" LeftArrow={LeftArrow} RightArrow={RightArrow}>
       {renderedGit}
-      </HorizontalScroll>   
+    </ScrollMenu>
     </>
+
 
   )
 
