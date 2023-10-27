@@ -81,7 +81,7 @@ const isSmall = useScreenSmall()
   return(
     <>
     <div id="youtube"></div>
-    <NavigationBar title={'Youtube Coding & Design'}/>
+    <NavigationBar title={'Coding & Design Videos'}/>
     <ImageBanner imagePath={'images/youtubebanner.png'} />
     <ScrollMenu className="scrollMenu" LeftArrow={LeftArrow} RightArrow={RightArrow}>
       {displayVideoInfo}
