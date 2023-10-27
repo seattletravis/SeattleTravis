@@ -1,4 +1,3 @@
-import HorizontalScroll from "react-scroll-horizontal"
 import NavigationBar from "./NavigationBar"
 import React from "react"
 import ImageBanner from "./ImageBanner"
@@ -67,15 +66,6 @@ const renderedTShirts = shirtData.map((shirt) => {
 
 
 return(
-  // <>
-  // <div id="tshirts"></div>
-  // <NavigationBar title={'Apparel Store!'}/>
-  // <ImageBanner imagePath={'images/unclehawaiibanner.png'} />
-  // <HorizontalScroll>
-  //   {renderedTShirts}
-  // </HorizontalScroll>
-  // </>
-
   <>
   <div id="tshirts"></div>
   <NavigationBar title={'Shop Beach Apparel'}/>

@@ -2,7 +2,7 @@ import NavigationBar from "./NavigationBar";
 import React from "react";
 import ImageBanner from "./ImageBanner";
 import useScreenSmall from "../hooks/useScreenSmall";
-import { ScrollMenu, VisibilityContext } from 'react-horizontal-scrolling-menu';
+import { ScrollMenu } from 'react-horizontal-scrolling-menu';
 import "react-horizontal-scrolling-menu/dist/styles.css";
 import LeftArrow from './LeftArrow';
 import RightArrow from './RightArrow';
