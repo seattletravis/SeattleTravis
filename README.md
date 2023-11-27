@@ -2,6 +2,8 @@
 
 LamberteDesign is a Portfolio Website designed to show off my React and Web Design Skills. This site is not created from a template. I took an idea I had  to showcase my projects in a Netflix style UX/UI web application and developed it into LamberteDesign. This site is hosted on an Ionos static server which is maintaned and updated by me. I keep this git repository as an open source project for anyone who may want to use my code to create a similar react web page. I will continually upgrade and do up keep to this web site.
 
+Latest updates include changes to horizontal side scroll menus to use buttons instead of mouse wheel genstures.
+
 [Go to LamberteDesign.com](https://www.lambertedesign.com)
 
 # Getting Started with Create React App
