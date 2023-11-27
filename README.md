@@ -4,6 +4,8 @@ LamberteDesign is a Portfolio Website designed to show off my React and Web Desi
 
 Latest updates include changes to horizontal side scroll menus to use buttons instead of mouse wheel genstures.
 
+Porjected updates: add light mode, and landing page
+
 [Go to LamberteDesign.com](https://www.lambertedesign.com)
 
 # Getting Started with Create React App
