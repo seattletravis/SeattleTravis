@@ -1,410 +1,395 @@
 * {
-  margin: 0;
-  padding: 0;
+	margin: 0;
+	padding: 0;
 }
 
-body{
-  overflow-x: hidden;
-  /* overflow-y: hidden; */
-  background-color: black;
+body {
+	overflow-x: hidden;
+	/* overflow-y: hidden; */
+	background-color: #202020;
 }
 
 nav {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  background-color: black;
-  color: white;
-  padding: 2vw;
+	font-family: 'Courier New', Courier, monospace;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	background-color: #202020;
+	color: white;
+	padding: 2vw;
 }
 
-.navBarTitle{
-  padding-left: 10px;
-  font-size: 2vw;
+.navBarTitle {
+	padding-left: 10px;
+	font-size: 2vw;
 }
 
-.navBarTitleSmallScreen{
-  padding-left: 10px;
-  font-size: 4vw;
+.navBarTitleSmallScreen {
+	padding-left: 10px;
+	font-size: 4vw;
 }
 
-.navButtons{
-  padding: .1vw .5vw .1vw .5vw;
-  font-size: 1.5vw;
-  transition: all 100ms ease-out 100ms
+.navButtons {
+	padding: 0.1vw 0.5vw 0.1vw 0.5vw;
+	font-size: 1.5vw;
+	transition: all 100ms ease-out 100ms;
 }
 
 .navButtons:hover {
-  background-color: rgb(176, 199, 180);
-  padding: 0.1vw .5vw 0.1vw .5vw;
-  border: solid white 2px;
-  border-radius: 1vw;
-  color: black;
+	background-color: rgb(176, 199, 180);
+	padding: 0.1vw 0.5vw 0.1vw 0.5vw;
+	border: solid white 2px;
+	border-radius: 1vw;
+	color: #202020;
 }
 
 .arrows {
-  padding: .1vw .5vw .1vw .5vw;
-  font-size: 5vw;
-  background-color: black;
-  transition: all 100ms ease-out 100ms
+	padding: 0.1vw 0.5vw 0.1vw 0.5vw;
+	font-size: 5vw;
+	background-color: #202020;
+	transition: all 100ms ease-out 100ms;
 }
 
 .arrows:hover {
-  background-color: rgb(176, 199, 180);
-  padding: .1vw .5vw .1vw .5vw;
-  border: solid white 2px;
-  border-radius: 3vw;
-  color: black;
+	background-color: rgb(176, 199, 180);
+	padding: 0.1vw 0.5vw 0.1vw 0.5vw;
+	border: solid white 2px;
+	border-radius: 3vw;
+	color: #202020;
 }
 
 .arrowsSmallScreen {
-  padding: .1vw .5vw .1vw .5vw;
-  font-size: 7vw;
-  transition: all 100ms ease-out 100ms
+	padding: 0.1vw 0.5vw 0.1vw 0.5vw;
+	font-size: 7vw;
+	transition: all 100ms ease-out 100ms;
 }
 
 .arrowsSmallScreen:hover {
-  background-color: rgb(176, 199, 180);
-  padding: .1vw .5vw .1vw .5vw;
-  border: solid white 2px;
-  border-radius: 4vw;
-  color: black;
+	background-color: rgb(176, 199, 180);
+	padding: 0.1vw 0.5vw 0.1vw 0.5vw;
+	border: solid white 2px;
+	border-radius: 4vw;
+	color: #202020;
 }
 
-
-.navButtonsSmallScreen{
-  font-size: 2.5vw;
-  transition: all 100ms ease-out 100ms
+.navButtonsSmallScreen {
+	font-size: 2.5vw;
+	transition: all 100ms ease-out 100ms;
 }
 
 .navButtonsSmallScreen:hover {
-  background-color: rgb(176, 199, 180);
-  padding: 0.1vw .5vw 0vw .5vw;
-  border: solid white 2px;
-  border-radius: 2vw;
-  color: black;
+	background-color: rgb(176, 199, 180);
+	padding: 0.1vw 0.5vw 0vw 0.5vw;
+	border: solid white 2px;
+	border-radius: 2vw;
+	color: #202020;
 }
 
-.contactLi{
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin: 1vw;
-  /* background-color: black; */
-  color: white;
-  font-size: .8vw;
+.contactLi {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin: 1vw;
+	/* background-color: #202020; */
+	color: white;
+	font-size: 0.8vw;
 }
 
-.contactLi div{
-  align-items: center;
-  justify-content: center;
+.contactLi div {
+	align-items: center;
+	justify-content: center;
 }
 
-.contactLi div h1{
-  display: flex;
-  justify-content: center;
-
+.contactLi div h1 {
+	display: flex;
+	justify-content: center;
 }
 
-.icon{
-  display: flex;
+.icon {
+	display: flex;
 }
-
 
 .iconDiv {
-  display: flex;
-  flex-direction: column;
-  margin-left: 6vw;
-  margin-right: 6vw;
-  padding: 1.5vw;
-  transition: all 100ms ease-out 100ms
+	display: flex;
+	flex-direction: column;
+	margin-left: 6vw;
+	margin-right: 6vw;
+	padding: 1.5vw;
+	transition: all 100ms ease-out 100ms;
 }
 
-.iconDiv:hover{
-  padding: 0vw .5vw 0vw .5vw;
-  border: solid white .25vw;
-  border-radius: 5vw;
-  padding: 1.5vw;
+.iconDiv:hover {
+	padding: 0vw 0.5vw 0vw 0.5vw;
+	border: solid white 0.25vw;
+	border-radius: 5vw;
+	padding: 1.5vw;
 }
 
-
-
-.centerContactBanner{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
+.centerContactBanner {
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
 ul {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  width: 50%;
-  list-style: none;
-  font-weight: bold;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	width: 50%;
+	list-style: none;
+	font-weight: bold;
 }
 
 li {
-  cursor: pointer;
+	cursor: pointer;
 }
 
 a {
-  text-decoration: none;
-  color: white;
-  text-transform: capitalize;
-
+	text-decoration: none;
+	color: white;
+	text-transform: capitalize;
 }
 
 .content {
-  display: flex;
-  align-items: left;
-  justify-content: left;
-  padding-top: 30px;
-  padding-left: 60px;
-  height: 100vh;
-  background-color: crimson;
-  margin: 30px;
-  border-radius: 30px;
-  
+	display: flex;
+	align-items: left;
+	justify-content: left;
+	padding-top: 30px;
+	padding-left: 60px;
+	height: 100vh;
+	background-color: crimson;
+	margin: 30px;
+	border-radius: 30px;
 }
 
 .content-header {
-  color: white;
-  text-transform: capitalize;
+	color: white;
+	text-transform: capitalize;
 }
 
 .scroll-header {
-  background-color: black;
-  color: white;
-  padding-left: 5vh;
-
+	background-color: #202020;
+	color: white;
+	padding-left: 5vh;
 }
 
-.tile-padding{
-  background-color: black;
-  /* padding: 1vw; */
-  /* box-sizing: border-box; */
+.tile-padding {
+	background-color: #202020;
+	/* padding: 1vw; */
+	/* box-sizing: border-box; */
 
-  border: yellow 3px solid;
-  
+	border: yellow 3px solid;
 }
 
 .horizontal {
-  align-items: center;
-  justify-content: center;
-  color: black;
-  background-color: black;
+	align-items: center;
+	justify-content: center;
+	color: #202020;
+	background-color: #202020;
 }
 
-.main{
-  width: 25vw;
-  height: 75vh;
-  color: black;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: black;
+.main {
+	width: 25vw;
+	height: 75vh;
+	color: #202020;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #202020;
 }
 
-.App{
-  width: 99vw;
-  height: 100%;
-  /* background-color: black; */
+.App {
+	width: 99vw;
+	height: 100%;
+	/* background-color: #202020; */
 }
 
-.background{
-  background-color: black;
+.background {
+	background-color: #202020;
 }
 
-.scrollBlock{
-  /* width: 98vw; */
-  height: 40vw;
-  object-fit: scale-down;
+.scrollBlock {
+	/* width: 98vw; */
+	height: 40vw;
+	object-fit: scale-down;
 }
 
-.responsiveFontSizing{
-  font-size: .75vw;
-  padding-bottom: 2vw;
-  /* border: solid 3px yellow; */
+.responsiveFontSizing {
+	font-size: 0.75vw;
+	padding-bottom: 2vw;
+	/* border: solid 3px yellow; */
 }
 
-.responsiveFontSizingSmallScreen{
-  font-size: 1.1vw;
-  padding-bottom: 2vw;
+.responsiveFontSizingSmallScreen {
+	font-size: 1.1vw;
+	padding-bottom: 2vw;
 }
 
-.contentBanner{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center; 
-  height: auto;
-  /* width: 99vw; */
-  padding: 1vw;
-  object-fit: scale-down;
-  background-color: black;
-
+.contentBanner {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: auto;
+	/* width: 99vw; */
+	padding: 1vw;
+	object-fit: scale-down;
+	background-color: #202020;
 }
 
-.contentBanner img{
-  height: auto;
-  width: 90vw;
-  /* border: solid 3px blue; */
-  border-radius: 3vw;
+.contentBanner img {
+	height: auto;
+	width: 90vw;
+	/* border: solid 3px blue; */
+	border-radius: 3vw;
 }
 
-.contentBanner div{
-  color: white;
-  font-size: 5vw;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+.contentBanner div {
+	color: white;
+	font-size: 5vw;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
 }
 
-.spacerBar{
-  padding-bottom: 4vw;
-  background-color: black;
+.spacerBar {
+	padding-bottom: 4vw;
+	background-color: #202020;
 }
 
-.displayTiles{
-  background-color: black;
-  /* border: solid 3px yellow;
+.displayTiles {
+	background-color: #202020;
+	/* border: solid 3px yellow;
   border-radius: 30px; */
-  justify-content: center;
-  align-items: center; 
-  width: 40vw;
-  height: 38vw;
-  padding-bottom: 9vw;
-  padding-left: 2vw;
-  padding-right: 2vw;
-  padding-top: 2vw;
-  object-fit: scale-down;
+	justify-content: center;
+	align-items: center;
+	width: 40vw;
+	height: 38vw;
+	padding-bottom: 9vw;
+	padding-left: 2vw;
+	padding-right: 2vw;
+	padding-top: 2vw;
+	object-fit: scale-down;
 }
 
-.displayTiles div{
-  background-color: black;
-  color: white;
-  /* height: 18vw; */
-  /* border-bottom: solid 3px pink;
+.displayTiles div {
+	background-color: #202020;
+	color: white;
+	/* height: 18vw; */
+	/* border-bottom: solid 3px pink;
   border-left: solid 3px pink;
   border-right: solid 3px pink;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px; */
-
 }
 
-.displayTiles img{
-  width: 100%;
-  height: auto;
-  object-fit: contain;
-  /* border: solid 3px yellow; */
-  border-radius: 2vw;
-  transition: all 150ms ease-out 150ms;
+.displayTiles img {
+	width: 100%;
+	height: auto;
+	object-fit: contain;
+	/* border: solid 3px yellow; */
+	border-radius: 2vw;
+	transition: all 150ms ease-out 150ms;
 }
 
-.displayTiles img:hover{
-  /* border: solid 3px yellow; */
-  border: solid white .2vw;
+.displayTiles img:hover {
+	/* border: solid 3px yellow; */
+	border: solid white 0.2vw;
 }
 
-
-.dTGames{
-  width: 40vw;
-  height: 33vw;
-
+.dTGames {
+	width: 40vw;
+	height: 33vw;
 }
 
-.dTShirts{
-  width: 28vw;
-  height: 40vw;
+.dTShirts {
+	width: 28vw;
+	height: 40vw;
 }
 
-.dTVideos{
-  width: 38vw;
-  height: 32vw;
+.dTVideos {
+	width: 38vw;
+	height: 32vw;
 }
 
-.dTGits{
-  width: 40vw;
-  height: 32vw;
+.dTGits {
+	width: 40vw;
+	height: 32vw;
 }
 
-.playButton{
-  padding-top: 1vw;
-  padding-bottom: 1vw;
+.playButton {
+	padding-top: 1vw;
+	padding-bottom: 1vw;
 }
 
-.hideButton{
-  display: none;
+.hideButton {
+	display: none;
 }
 
-.playButton a{
-  padding: .1vw .5vw .1vw .5vw;
-  font-size: 1.5vw;
-  transition: all 100ms ease-out 100ms
+.playButton a {
+	padding: 0.1vw 0.5vw 0.1vw 0.5vw;
+	font-size: 1.5vw;
+	transition: all 100ms ease-out 100ms;
 }
 
-.playButton a:hover{
-  background-color: rgb(176, 199, 180);
-  padding: 0.1vw .5vw 0.1vw .5vw;
-  border: solid white 2px;
-  border-radius: 4vw;
-  color: black;
+.playButton a:hover {
+	background-color: rgb(176, 199, 180);
+	padding: 0.1vw 0.5vw 0.1vw 0.5vw;
+	border: solid white 2px;
+	border-radius: 4vw;
+	color: #202020;
 }
 
-.horzo{
-  background-color: black;
+.horzo {
+	background-color: #202020;
 }
 
-.about{
-  color: black;
-  background-color: lightgrey;
-  /* padding-left: 10vw;
+.about {
+	color: #202020;
+	background-color: lightgrey;
+	/* padding-left: 10vw;
   padding-right: 10vw; */
-  padding: 5vw;
-  border: solid 2px black;
-  border-radius: 3vw;
-  font-size: 1.5vw;
+	padding: 5vw;
+	border: solid 2px #202020;
+	border-radius: 3vw;
+	font-size: 1.5vw;
 }
 
-.aboutSmallScreen{
-  color: black;
-  background-color: lightgrey;
-  /* padding-left: 10vw;
+.aboutSmallScreen {
+	color: #202020;
+	background-color: lightgrey;
+	/* padding-left: 10vw;
   padding-right: 10vw; */
-  padding: 5vw;
-  border: solid 2px black;
-  border-radius: 3vw;
-  font-size: 3vw;
+	padding: 5vw;
+	border: solid 2px #202020;
+	border-radius: 3vw;
+	font-size: 3vw;
 }
 
-.aboutOuter{
-  padding-left: 5vw;
-  padding-right: 5vw;
-  background-color: black;
+.aboutOuter {
+	padding-left: 5vw;
+	padding-right: 5vw;
+	background-color: #202020;
 }
 
 .update {
-  color: white;
-  padding-left: 5vw;
-  padding-bottom: 1vw;
-  font-size: 1.5vw;
+	font-family: 'Courier New', Courier, monospace;
+	color: white;
+	padding-left: 5vw;
+	padding-bottom: 1vw;
+	font-size: 1.5vw;
 }
-.update h2{
-  margin-top: 3vw;
-  margin-bottom: 2vw;
+.update h2 {
+	margin-top: 3vw;
+	margin-bottom: 2vw;
 }
 
 .react-horizontal-scrolling-menu--scroll-container::-webkit-scrollbar {
-  display: none;
+	display: none;
 }
 
 .react-horizontal-scrolling-menu--scroll-container {
-  -ms-overflow-style: none; /* IE and Edge */
-  scrollbar-width: none; /* Firefox */
+	-ms-overflow-style: none; /* IE and Edge */
+	scrollbar-width: none; /* Firefox */
 }
-
-
-
