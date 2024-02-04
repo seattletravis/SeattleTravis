@@ -1,10 +1,9 @@
-function SpacerBar(){
-
-  return(
-    <>
-      <div className="spacerBar">Scroll Divider</div>
-    </>
-  )
+function SpacerBar() {
+	return (
+		<>
+			<div className='spacerBar'></div>
+		</>
+	);
 }
 
-export default SpacerBar
+export default SpacerBar;

@@ -20,17 +20,18 @@ nav {
 }
 
 .navBarTitle {
-	padding-left: 10px;
-	font-size: 2vw;
+	padding-left: 5px;
+	font-size: 2.5vw;
 }
 
 .navBarTitleSmallScreen {
-	padding-left: 10px;
+	padding-left: 5px;
 	font-size: 3vw;
 }
 
 .navButtons {
 	padding: 0.1vw 0.5vw 0.1vw 0.5vw;
+	margin: 0vw 1vw 0vw, 1vw;
 	font-size: 2vw;
 	transition: all 100ms ease-out 100ms;
 }
@@ -74,6 +75,7 @@ nav {
 
 .navButtonsSmallScreen {
 	font-size: 2.5vw;
+	padding: 0.1vw 1vw 0.1vw 0.5vw;
 	transition: all 100ms ease-out 100ms;
 }
 

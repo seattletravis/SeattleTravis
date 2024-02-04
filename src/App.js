@@ -9,47 +9,43 @@ import SpacerBar from './components/SpacerBar';
 import { useEffect } from 'react';
 import ContactBanner from './components/ContactBanner';
 import AboutMe from './components/AboutMe';
-import Update from './components/Update'
-
-
+import Update from './components/Update';
 
 function App() {
+	useEffect(() => {
+		document.title = 'LamberteDesign';
+	}, []);
 
-  useEffect(()=>{
-    document.title = 'LamberteDesign'
-  }, []);
+	return (
+		<div>
+			<div className='background' id='home'>
+				<div className='App'>
+					<NavigationBar title={'LamberteDesign'} />
+					<ImageBanner imagePath={'images/seattlebanner2.png'} />
+					<ContactBanner />
+					<Update />
+				</div>
+			</div>
 
-  return (
-    <div>
-      <div className='background' id='home'>
-        <div className="App">
-          <NavigationBar title={"LamberteDesign"}/>
-          <Update />
-          <ImageBanner imagePath={'images/seattlebanner2.png'} />
-          <ContactBanner />
-        </div>
-      </div>
-
-      <div className='scrollBlock'>
-        <SpacerBar />
-        <ScrollableGameContent />
-        <SpacerBar />
-        <ScrollableVideoContent />
-        <SpacerBar />
-        <ScollableGitHubContent />
-        <SpacerBar />
-        <SpacerBar />
-        <ScrollableTShirtContent />
-        <SpacerBar />
-        <AboutMe />
-        <ContactBanner />
-        <ImageBanner imagePath={'images/seattlebanner2.png'} />
-        <NavigationBar title={"You've reached the bottom!"} /> 
-        <SpacerBar />
-      </div>
- 
-    </div>
-  );
+			<div className='scrollBlock'>
+				<SpacerBar />
+				<ScrollableGameContent />
+				<SpacerBar />
+				<ScrollableVideoContent />
+				<SpacerBar />
+				<ScollableGitHubContent />
+				<SpacerBar />
+				<SpacerBar />
+				<ScrollableTShirtContent />
+				<SpacerBar />
+				<AboutMe />
+				<ContactBanner />
+				<ImageBanner imagePath={'images/seattlebanner2.png'} />
+				<NavigationBar title={"You've reached the bottom!"} />
+				<SpacerBar />
+			</div>
+		</div>
+	);
 }
 
 export default App;
