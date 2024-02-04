@@ -378,13 +378,13 @@ a {
 .update {
 	font-family: 'Courier New', Courier, monospace;
 	color: white;
-	padding-left: 5vw;
-	padding-bottom: 1vw;
+	padding-left: 10vw;
+	padding-bottom: 0.5vw;
 	font-size: 1vw;
 }
 .update h2 {
-	margin-top: 3vw;
-	margin-bottom: 2vw;
+	/* margin-top: 1vw; */
+	margin-bottom: 0.5vw;
 }
 
 .react-horizontal-scrolling-menu--scroll-container::-webkit-scrollbar {

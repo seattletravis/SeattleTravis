@@ -16,7 +16,7 @@ function ScrollableGameContent() {
 			title: 'Snake Boid AI',
 			language: 'JavaScript',
 			url: 'https://seattletravis.com',
-			image: 'images/games/tilt3d1.png',
+			image: 'images/games/snakeLD.png',
 			libraries: 'VictorJS',
 		},
 		{
