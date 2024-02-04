@@ -21,9 +21,9 @@ function App() {
 			<div className='background' id='home'>
 				<div className='App'>
 					<NavigationBar title={'LamberteDesign'} />
+					<Update />
 					<ImageBanner imagePath={'images/seattlebanner2.png'} />
 					<ContactBanner />
-					<Update />
 				</div>
 			</div>
 

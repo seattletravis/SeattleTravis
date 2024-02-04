@@ -12,6 +12,14 @@ function ScrollableGameContent() {
 
 	const gameData = [
 		{
+			id: '8',
+			title: 'Snake Boid AI',
+			language: 'JavaScript',
+			url: 'https://seattletravis.com',
+			image: 'images/games/tilt3d1.png',
+			libraries: 'VictorJS',
+		},
+		{
 			id: '1',
 			title: 'Tilt3D Single Player',
 			language: 'JavaScript, HTML, CSS',

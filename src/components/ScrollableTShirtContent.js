@@ -143,7 +143,7 @@ function ScrollableTShirtContent() {
 
 	return (
 		<>
-			<div id='tshirts'></div>
+			<div id='apparal'></div>
 			<NavigationBar title={'Apparel'} />
 			<ImageBanner imagePath={'images/unclehawaiibanner.png'} />
 			<ScrollMenu
