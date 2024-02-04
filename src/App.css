@@ -6,7 +6,7 @@
 body {
 	overflow-x: hidden;
 	/* overflow-y: hidden; */
-	background-color: #202020;
+	background-color: #393a3f;
 }
 
 nav {
@@ -14,9 +14,9 @@ nav {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	background-color: #202020;
+	background-color: #393a3f;
 	color: white;
-	padding: 2vw;
+	padding: 3vw;
 }
 
 .navBarTitle {
@@ -26,12 +26,12 @@ nav {
 
 .navBarTitleSmallScreen {
 	padding-left: 10px;
-	font-size: 4vw;
+	font-size: 3vw;
 }
 
 .navButtons {
 	padding: 0.1vw 0.5vw 0.1vw 0.5vw;
-	font-size: 1.5vw;
+	font-size: 2vw;
 	transition: all 100ms ease-out 100ms;
 }
 
@@ -39,14 +39,14 @@ nav {
 	background-color: rgb(176, 199, 180);
 	padding: 0.1vw 0.5vw 0.1vw 0.5vw;
 	border: solid white 2px;
-	border-radius: 1vw;
-	color: #202020;
+	border-radius: 0.5vw;
+	color: #393a3f;
 }
 
 .arrows {
 	padding: 0.1vw 0.5vw 0.1vw 0.5vw;
 	font-size: 5vw;
-	background-color: #202020;
+	background-color: #393a3f;
 	transition: all 100ms ease-out 100ms;
 }
 
@@ -55,7 +55,7 @@ nav {
 	padding: 0.1vw 0.5vw 0.1vw 0.5vw;
 	border: solid white 2px;
 	border-radius: 3vw;
-	color: #202020;
+	color: #393a3f;
 }
 
 .arrowsSmallScreen {
@@ -69,7 +69,7 @@ nav {
 	padding: 0.1vw 0.5vw 0.1vw 0.5vw;
 	border: solid white 2px;
 	border-radius: 4vw;
-	color: #202020;
+	color: #393a3f;
 }
 
 .navButtonsSmallScreen {
@@ -81,8 +81,8 @@ nav {
 	background-color: rgb(176, 199, 180);
 	padding: 0.1vw 0.5vw 0vw 0.5vw;
 	border: solid white 2px;
-	border-radius: 2vw;
-	color: #202020;
+	border-radius: 1vw;
+	color: #393a3f;
 }
 
 .contactLi {
@@ -90,7 +90,7 @@ nav {
 	align-items: center;
 	justify-content: space-between;
 	margin: 1vw;
-	/* background-color: #202020; */
+	/* background-color: #393A3F; */
 	color: white;
 	font-size: 0.8vw;
 }
@@ -168,13 +168,13 @@ a {
 }
 
 .scroll-header {
-	background-color: #202020;
+	background-color: #393a3f;
 	color: white;
 	padding-left: 5vh;
 }
 
 .tile-padding {
-	background-color: #202020;
+	background-color: #393a3f;
 	/* padding: 1vw; */
 	/* box-sizing: border-box; */
 
@@ -184,28 +184,28 @@ a {
 .horizontal {
 	align-items: center;
 	justify-content: center;
-	color: #202020;
-	background-color: #202020;
+	color: #393a3f;
+	background-color: #393a3f;
 }
 
 .main {
 	width: 25vw;
 	height: 75vh;
-	color: #202020;
+	color: #393a3f;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	background-color: #202020;
+	background-color: #393a3f;
 }
 
 .App {
 	width: 99vw;
 	height: 100%;
-	/* background-color: #202020; */
+	/* background-color: #393A3F; */
 }
 
 .background {
-	background-color: #202020;
+	background-color: #393a3f;
 }
 
 .scrollBlock {
@@ -234,7 +234,7 @@ a {
 	/* width: 99vw; */
 	padding: 1vw;
 	object-fit: scale-down;
-	background-color: #202020;
+	background-color: #393a3f;
 }
 
 .contentBanner img {
@@ -255,11 +255,11 @@ a {
 
 .spacerBar {
 	padding-bottom: 4vw;
-	background-color: #202020;
+	background-color: #393a3f;
 }
 
 .displayTiles {
-	background-color: #202020;
+	background-color: #393a3f;
 	/* border: solid 3px yellow;
   border-radius: 30px; */
 	justify-content: center;
@@ -274,7 +274,7 @@ a {
 }
 
 .displayTiles div {
-	background-color: #202020;
+	background-color: #393a3f;
 	color: white;
 	/* height: 18vw; */
 	/* border-bottom: solid 3px pink;
@@ -338,31 +338,31 @@ a {
 	padding: 0.1vw 0.5vw 0.1vw 0.5vw;
 	border: solid white 2px;
 	border-radius: 4vw;
-	color: #202020;
+	color: #393a3f;
 }
 
 .horzo {
-	background-color: #202020;
+	background-color: #393a3f;
 }
 
 .about {
-	color: #202020;
+	color: #393a3f;
 	background-color: lightgrey;
 	/* padding-left: 10vw;
   padding-right: 10vw; */
 	padding: 5vw;
-	border: solid 2px #202020;
+	border: solid 2px #393a3f;
 	border-radius: 3vw;
 	font-size: 1.5vw;
 }
 
 .aboutSmallScreen {
-	color: #202020;
+	color: #393a3f;
 	background-color: lightgrey;
 	/* padding-left: 10vw;
   padding-right: 10vw; */
 	padding: 5vw;
-	border: solid 2px #202020;
+	border: solid 2px #393a3f;
 	border-radius: 3vw;
 	font-size: 3vw;
 }
@@ -370,7 +370,7 @@ a {
 .aboutOuter {
 	padding-left: 5vw;
 	padding-right: 5vw;
-	background-color: #202020;
+	background-color: #393a3f;
 }
 
 .update {
