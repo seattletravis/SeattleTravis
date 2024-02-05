@@ -10,7 +10,7 @@ function NavigationBar({ title }) {
 		{ id: 2, title: 'games' },
 		{ id: 3, title: 'youtube' },
 		{ id: 4, title: 'github' },
-		{ id: 5, title: 'apparal' },
+		{ id: 5, title: 'apparel' },
 	];
 
 	return (
