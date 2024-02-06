@@ -29,11 +29,11 @@ function App() {
 
 			<div className='scrollBlock'>
 				<SpacerBar />
+				<ScollableGitHubContent />
+				<SpacerBar />
 				<ScrollableGameContent />
 				<SpacerBar />
 				<ScrollableVideoContent />
-				<SpacerBar />
-				<ScollableGitHubContent />
 				<SpacerBar />
 				<SpacerBar />
 				<ScrollableTShirtContent />
