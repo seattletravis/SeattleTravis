@@ -19,18 +19,22 @@ function NavigationBar({ title }) {
 				<h1 className={isSmall ? 'navBarTitleSmallScreen' : 'navBarTitle'}>
 					{title}
 				</h1>
-				<ul>
-					{menuItems.map((menu) => (
-						<li key={menu.id}>
-							<Link to={menu.title} smooth={true} offset={0} duration={1000}>
-								<h3
-									className={isSmall ? 'navButtonsSmallScreen' : 'navButtons'}>
-									{menu.title}
-								</h3>
-							</Link>
-						</li>
-					))}
-				</ul>
+				<div className='navButtonsBlock'>
+					<ul>
+						{menuItems.map((menu) => (
+							<li key={menu.id}>
+								<Link to={menu.title} smooth={true} offset={0} duration={1000}>
+									<h3
+										className={
+											isSmall ? 'navButtonsSmallScreen' : 'navButtons'
+										}>
+										{menu.title}
+									</h3>
+								</Link>
+							</li>
+						))}
+					</ul>
+				</div>
 			</nav>
 		</>
 	);

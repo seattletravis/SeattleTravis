@@ -17,10 +17,10 @@ function App() {
 	}, []);
 
 	return (
-		<div>
+		<>
+			<NavigationBar title={'Travis Lamberte'} />
 			<div className='background' id='home'>
 				<div className='App'>
-					<NavigationBar title={'LamberteDesign'} />
 					<Update />
 					<ImageBanner imagePath={'images/seattlebanner2.png'} />
 					<ContactBanner />
@@ -44,7 +44,7 @@ function App() {
 				<NavigationBar title={"You've reached the bottom!"} />
 				<SpacerBar />
 			</div>
-		</div>
+		</>
 	);
 }
 
