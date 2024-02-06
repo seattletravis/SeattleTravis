@@ -6,6 +6,7 @@
 .App {
 	width: 97vw;
 	height: 100%;
+	border: solid red 2px;
 }
 
 body {
@@ -27,7 +28,15 @@ nav {
 .navButtonsBlock {
 	display: flex;
 	align-items: center;
-	justify-content: right;
+	justify-content: center;
+	/* margin-left: 20vw; */
+	border: solid red 2px;
+}
+
+.navButtonsBlockSmallScreen {
+	display: flex;
+	align-items: center;
+	justify-content: center;
 	margin-right: 20vw;
 }
 
@@ -44,7 +53,6 @@ nav {
 .navButtons {
 	padding: 0.1vw 1.5vw 0.1vw 1.5vw;
 	margin: 0.2vw 0.2vw 0.2vw 0.2vw;
-
 	font-size: 2vw;
 	transition: all 100ms ease-out 100ms;
 }

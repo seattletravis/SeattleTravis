@@ -18,9 +18,9 @@ function App() {
 
 	return (
 		<>
-			<NavigationBar title={'Travis Lamberte'} />
 			<div className='background' id='home'>
 				<div className='App'>
+					<NavigationBar title={'Travis Lamberte'} />
 					<Update />
 					<ImageBanner imagePath={'images/seattlebanner2.png'} />
 					<ContactBanner />
