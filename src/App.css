@@ -6,7 +6,6 @@
 .App {
 	width: 97vw;
 	height: 100%;
-	border: solid red 2px;
 }
 
 body {
@@ -29,15 +28,6 @@ nav {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	/* margin-left: 20vw; */
-	border: solid red 2px;
-}
-
-.navButtonsBlockSmallScreen {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	margin-right: 20vw;
 }
 
 .navBarTitle {
@@ -47,20 +37,20 @@ nav {
 
 .navBarTitleSmallScreen {
 	padding-left: 5px;
-	font-size: 3vw;
+	font-size: 2.5vw;
 }
 
 .navButtons {
-	padding: 0.1vw 1.5vw 0.1vw 1.5vw;
-	margin: 0.2vw 0.2vw 0.2vw 0.2vw;
+	padding: 0.8vw 1vw 0.8vw 1vw;
+	margin: 0.1vw 0.8vw 0.1vw 0.8vw;
 	font-size: 2vw;
 	transition: all 100ms ease-out 100ms;
 }
 
 .navButtonsSmallScreen {
 	font-size: 2.5vw;
-	padding: 0.1vw 2vw 0.1vw 2vw;
-	margin: 0.1vw 0.2vw 0.1vw 0.2vw;
+	padding: 1vw 1.2vw 1vw 1.2vw;
+	margin: 0.1vw 0.5vw 0.1vw 0.5vw;
 	transition: all 100ms ease-out 100ms;
 }
 
