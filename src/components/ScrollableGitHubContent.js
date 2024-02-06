@@ -11,6 +11,22 @@ function ScollableGitHubContent() {
 
 	const gitData = [
 		{
+			id: '11',
+			title: 'SnakeBoidAI',
+			language: 'JavaScript',
+			image: 'images/youtube/snakeLD.png',
+			libraries: '',
+			url: 'https://github.com/seattletravis/SnakeEatsBoids',
+		},
+		{
+			id: '12',
+			title: 'Dev Log is a Blog',
+			language: 'JavaScript',
+			image: 'images/youtube/blog.png',
+			libraries: '',
+			url: 'https://github.com/seattletravis/blog',
+		},
+		{
 			id: '1',
 			title: 'LamberteDesign.com',
 			language: 'React, JavaScript, CSS',
