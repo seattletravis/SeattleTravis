@@ -21,7 +21,7 @@ function ScollableGitHubContent() {
 		{
 			id: '12',
 			title: 'Dev Log is a Blog',
-			language: 'JavaScript',
+			language: 'Markdown',
 			image: 'images/youtube/blog.png',
 			libraries: '',
 			url: 'https://github.com/seattletravis/blog',
