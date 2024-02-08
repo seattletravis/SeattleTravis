@@ -6,7 +6,7 @@ Latest updates include changes to horizontal side scroll menus to use buttons in
 
 Porjected updates: add light mode, and landing page
 
-[Go to LamberteDesign.com](https://www.SeattleTravis.com)
+[Go to SeattleTravis.com](https://www.SeattleTravis.com)
 
 # Getting Started with Create React App
 
