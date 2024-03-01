@@ -390,12 +390,26 @@ a {
 	color: white;
 	padding-left: 10vw;
 	padding-bottom: 0.5vw;
-	font-size: 1vw;
+	font-size: 2.5vw;
+	/* display: flex; */
+	/* position: relative;
+	z-index: 0; */
+	border: solid yellow 2px;
 }
-.update h2 {
-	/* margin-top: 1vw; */
+
+.update td {
+	font-family: 'Courier New', Courier, monospace;
+
+	font-size: 2vw;
+	width: 100%;
+	display: block;
+}
+
+/* .update h2 {
 	margin-bottom: 0.5vw;
-}
+	display: flex;
+	z-index: 0;
+} */
 
 .react-horizontal-scrolling-menu--scroll-container::-webkit-scrollbar {
 	display: none;
@@ -404,4 +418,9 @@ a {
 .react-horizontal-scrolling-menu--scroll-container {
 	-ms-overflow-style: none; /* IE and Edge */
 	scrollbar-width: none; /* Firefox */
+}
+
+.myHead {
+	position: absolute;
+	z-index: 999999;
 }
