@@ -82,6 +82,8 @@ nav {
 	font-size: 5vw;
 	background-color: #393a3f;
 	transition: all 100ms ease-out 100ms;
+	position: relative;
+	z-index: 11;
 }
 
 .arrows:hover {
@@ -96,6 +98,8 @@ nav {
 	padding: 0.1vw 0.5vw 0.1vw 0.5vw;
 	font-size: 7vw;
 	transition: all 100ms ease-out 100ms;
+	position: relative;
+	z-index: 11;
 }
 
 .arrowsSmallScreen:hover {
@@ -225,11 +229,12 @@ a {
 	background-color: #393a3f;
 }
 
-.scrollBlock {
-	/* width: 98vw; */
+/* .scrollBlock {
 	height: 40vw;
 	object-fit: scale-down;
-}
+	position: relative;
+	z-index: 9;
+} */
 
 .responsiveFontSizing {
 	font-size: 0.75vw;
@@ -288,17 +293,13 @@ a {
 	padding-right: 2vw;
 	padding-top: 2vw;
 	object-fit: scale-down;
+	position: relative;
+	z-index: 9;
 }
 
 .displayTiles div {
 	background-color: #393a3f;
 	color: white;
-	/* height: 18vw; */
-	/* border-bottom: solid 3px pink;
-  border-left: solid 3px pink;
-  border-right: solid 3px pink;
-  border-bottom-left-radius: 10px;
-  border-bottom-right-radius: 10px; */
 }
 
 .displayTiles img {
@@ -318,21 +319,29 @@ a {
 .dTGames {
 	width: 40vw;
 	height: 33vw;
+	position: relative;
+	z-index: 11;
 }
 
 .dTShirts {
 	width: 28vw;
 	height: 40vw;
+	position: relative;
+	z-index: 11;
 }
 
 .dTVideos {
 	width: 38vw;
 	height: 32vw;
+	position: relative;
+	z-index: 11;
 }
 
 .dTGits {
 	width: 40vw;
 	height: 32vw;
+	position: relative;
+	z-index: 11;
 }
 
 .playButton {

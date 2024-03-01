@@ -1,7 +1,7 @@
 import './App.css';
 import ScrollableGameContent from './components/ScrollableGameContent';
-import ScrollableVideoContent from './components/ScrollableVideoContent';
-import ScrollableTShirtContent from './components/ScrollableTShirtContent';
+// import ScrollableVideoContent from './components/ScrollableVideoContent';
+// import ScrollableTShirtContent from './components/ScrollableTShirtContent';
 import ScollableGitHubContent from './components/ScrollableGitHubContent';
 import NavigationBar from './components/NavigationBar';
 import ImageBanner from './components/ImageBanner';
@@ -34,7 +34,8 @@ function App() {
 					</div>
 				</div>
 
-				<div className='scrollBlock'>
+				{/* <div className='scrollBlock'> */}
+				<div>
 					<SpacerBar />
 					<ScollableGitHubContent />
 					<SpacerBar />
