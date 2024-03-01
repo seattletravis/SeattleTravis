@@ -9,6 +9,8 @@ function NavigationBar({ title }) {
 		{ id: 1, title: 'home' },
 		{ id: 2, title: 'github' },
 		{ id: 3, title: 'games' },
+		{ id: 4, title: 'about' },
+
 		// { id: 4, title: 'youtube' },
 		// { id: 5, title: 'apparel' },
 	];
