@@ -391,18 +391,22 @@ a {
 	padding-left: 10vw;
 	padding-bottom: 0.5vw;
 	font-size: 2.5vw;
-	/* display: flex; */
-	/* position: relative;
-	z-index: 0; */
-	border: solid yellow 2px;
+	text-align: left;
+}
+
+.update th {
+	font-family: 'Courier New', Courier, monospace;
+	font-size: 2vw;
+	width: 100%;
+	display: block;
 }
 
 .update td {
 	font-family: 'Courier New', Courier, monospace;
-
-	font-size: 2vw;
+	font-size: 1.5vw;
 	width: 100%;
 	display: block;
+	margin-left: 2vw;
 }
 
 /* .update h2 {

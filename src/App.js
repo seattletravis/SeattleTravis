@@ -21,34 +21,36 @@ function App() {
 
 	return (
 		<>
-			<div className='myHead'>
-				<Canvas />
-			</div>
-			<div className='background' id='home'>
-				<div className='App'>
-					<NavigationBar title={'Travis Lamberte'} />
-					<Update />
-					<ImageBanner imagePath={'images/seattlebanner2.png'} />
-					<ContactBanner />
+			<div className='zIndex'>
+				<div className='myHead'>
+					<Canvas />
 				</div>
-			</div>
+				<div className='background' id='home'>
+					<div className='App'>
+						<NavigationBar title={'Travis Lamberte'} />
+						<Update />
+						<ImageBanner imagePath={'images/seattlebanner2.png'} />
+						<ContactBanner />
+					</div>
+				</div>
 
-			<div className='scrollBlock'>
-				<SpacerBar />
-				<ScollableGitHubContent />
-				<SpacerBar />
-				<ScrollableGameContent />
-				<SpacerBar />
-				<ScrollableVideoContent />
-				<SpacerBar />
-				<SpacerBar />
-				<ScrollableTShirtContent />
-				<SpacerBar />
-				<AboutMe />
-				<ContactBanner />
-				<ImageBanner imagePath={'images/seattlebanner2.png'} />
-				<NavigationBar title={"You've reached the bottom!"} />
-				<SpacerBar />
+				<div className='scrollBlock'>
+					<SpacerBar />
+					<ScollableGitHubContent />
+					<SpacerBar />
+					<ScrollableGameContent />
+					<SpacerBar />
+					{/* <ScrollableVideoContent />
+					<SpacerBar /> */}
+					{/* <SpacerBar />
+					<ScrollableTShirtContent /> */}
+					<SpacerBar />
+					<AboutMe />
+					<ContactBanner />
+					<ImageBanner imagePath={'images/seattlebanner2.png'} />
+					<NavigationBar title={"You've reached the bottom!"} />
+					<SpacerBar />
+				</div>
 			</div>
 		</>
 	);

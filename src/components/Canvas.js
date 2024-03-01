@@ -11,10 +11,6 @@ const Canvas = (props) => {
 		ctx.fill();
 	};
 
-	// const draw = (ctx, frameCount) => {
-	// 	ctx.drawImage(travishead, 50, 100);
-	// };
-
 	useEffect(() => {
 		const canvas = canvasRef.current;
 		const context = canvas.getContext('2d');
