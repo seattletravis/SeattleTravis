@@ -89,7 +89,9 @@ nav {
 .arrows:hover {
 	background-color: rgb(176, 199, 180);
 	padding: 0.1vw 0.5vw 0.1vw 0.5vw;
-	border: solid white 2px;
+	/* border: solid white 2px; */
+	box-shadow: inset 0px 0px 0px 2px #393a3f;
+
 	border-radius: 3vw;
 	color: #393a3f;
 }
@@ -105,7 +107,8 @@ nav {
 .arrowsSmallScreen:hover {
 	background-color: rgb(176, 199, 180);
 	padding: 0.1vw 0.5vw 0.1vw 0.5vw;
-	border: solid white 2px;
+	/* border: solid white 2px; */
+	box-shadow: inset 0px 0px 0px 2px #393a3f;
 	border-radius: 4vw;
 	color: #393a3f;
 }
@@ -115,7 +118,6 @@ nav {
 	align-items: center;
 	justify-content: space-between;
 	margin: 1vw;
-	/* background-color: #393A3F; */
 	color: white;
 	font-size: 0.8vw;
 }
@@ -144,10 +146,12 @@ nav {
 }
 
 .iconDiv:hover {
-	padding: 0vw 0.5vw 0vw 0.5vw;
-	border: solid white 0.25vw;
+	background-color: rgb(176, 199, 180);
+	-webkit-box-shadow: inset 0px 0px 0px 2px #393a3f;
+	-moz-box-shadow: inset 0px 0px 0px 2px #393a3f;
+	box-shadow: inset 0px 0px 0px 2px #393a3f;
 	border-radius: 5vw;
-	padding: 1.5vw;
+	color: #393a3f;
 }
 
 .centerContactBanner {
@@ -362,7 +366,9 @@ a {
 .playButton a:hover {
 	background-color: rgb(176, 199, 180);
 	padding: 0.1vw 0.5vw 0.1vw 0.5vw;
-	border: solid white 2px;
+	/* border: solid white 2px; */
+	box-shadow: inset 0px 0px 0px 2px #393a3f;
+
 	border-radius: 4vw;
 	color: #393a3f;
 }
