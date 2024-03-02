@@ -22,9 +22,9 @@ function App() {
 	return (
 		<>
 			<div className='zIndex'>
-				{/* <div className='myHead'>
+				<div className='myHead'>
 					<Canvas />
-				</div> */}
+				</div>
 				<div className='background' id='home'>
 					<div className='App'>
 						<NavigationBar title={'Travis Lamberte'} />

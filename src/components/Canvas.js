@@ -1,6 +1,13 @@
-import React, { useRef, useEffect } from 'react';
+import React, { useRef, useEffect, useState } from 'react';
+import { useKeyDown } from '../hooks/useKeyDown';
 
-const Canvas = (props) => {
+const Canvas = (props, keys) => {
+	const [moveXY, setMoveXY] = useState([]);
+
+	useKeyDown(() => {
+		console.log('it sort of works');
+	}, ['ArrowUp']);
+
 	const canvasRef = useRef(null);
 
 	const draw = (ctx, frameCount) => {
@@ -9,9 +16,15 @@ const Canvas = (props) => {
 		ctx.clearRect(0, 0, ctx.canvas.width, ctx.canvas.height);
 		ctx.fillStyle = '#000000';
 		ctx.beginPath();
-		let x = 0.25 * ctx.canvas.width;
-		let y = 0.25 * ctx.canvas.height;
-		ctx.arc(x, y, 20 * Math.sin(frameCount * 0.05) ** 2, 0, 2 * Math.PI);
+		let headX = 0.25 * ctx.canvas.width;
+		let headY = 0.25 * ctx.canvas.height;
+		ctx.arc(
+			headY,
+			headX,
+			20 * Math.sin(frameCount * 0.05) ** 2,
+			0,
+			2 * Math.PI
+		);
 		ctx.fill();
 	};
 
