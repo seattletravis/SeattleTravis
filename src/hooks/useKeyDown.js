@@ -14,3 +14,8 @@ export const useKeyDown = (callback, keys) => {
 		};
 	}, [onKeyDown]);
 };
+
+// Example usage:
+// useKeyDown(() => {
+//   someCallback();
+// }, ["Escape"]);

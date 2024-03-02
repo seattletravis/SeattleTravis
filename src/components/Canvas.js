@@ -3,10 +3,31 @@ import { useKeyDown } from '../hooks/useKeyDown';
 
 const Canvas = (props, keys) => {
 	const [moveXY, setMoveXY] = useState([]);
-
 	useKeyDown(() => {
-		console.log('it sort of works');
+		console.log('ArrowUp');
+		detectKeyDown('ArrowUp');
 	}, ['ArrowUp']);
+
+	// let [headX, setHeadX] = useState(0.25 * window.innerWidth);
+	// let [headY, setHeadY] = useState(0.25 * window.innerHeight);
+
+	// useEffect(() => {
+	// 	document.addEventListener('keydown', detectKeyDown, true);
+	// }, [moveXY[0]]);
+
+	const detectKeyDown = (key) => {
+		if (
+			(key === 'ArrowUp' ||
+				key === 'ArrowDown' ||
+				key === 'ArrowLeft' ||
+				key === 'ArrowRight') &&
+			moveXY.indexOf(key) === -1
+		) {
+			setMoveXY([...moveXY, key]);
+		}
+
+		console.log(moveXY);
+	};
 
 	const canvasRef = useRef(null);
 
