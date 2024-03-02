@@ -3,17 +3,25 @@ import { useKeyDown } from '../hooks/useKeyDown';
 
 const Canvas = (props, keys) => {
 	const [moveXY, setMoveXY] = useState([]);
+	const [headX, setHeadX] = useState(0.25 * window.innerWidth);
+	const [headY, setHeadY] = useState(0.25 * window.innerHeight);
+	let [headVX, setHeadVX] = useState(0);
+
 	useKeyDown(() => {
-		console.log('ArrowUp');
 		detectKeyDown('ArrowUp');
 	}, ['ArrowUp']);
 
-	// let [headX, setHeadX] = useState(0.25 * window.innerWidth);
-	// let [headY, setHeadY] = useState(0.25 * window.innerHeight);
+	useKeyDown(() => {
+		detectKeyDown('ArrowDown');
+	}, ['ArrowDown']);
 
-	// useEffect(() => {
-	// 	document.addEventListener('keydown', detectKeyDown, true);
-	// }, [moveXY[0]]);
+	useKeyDown(() => {
+		detectKeyDown('ArrowLeft');
+	}, ['ArrowLeft']);
+
+	useKeyDown(() => {
+		detectKeyDown('ArrowRight');
+	}, ['ArrowRight']);
 
 	const detectKeyDown = (key) => {
 		if (
@@ -25,11 +33,22 @@ const Canvas = (props, keys) => {
 		) {
 			setMoveXY([...moveXY, key]);
 		}
-
 		console.log(moveXY);
 	};
 
 	const canvasRef = useRef(null);
+
+	const update = () => {
+		if (moveXY.includes('ArrowUp')) {
+			setHeadY(headY - 10);
+		} else if (moveXY.includes('ArrowDown')) {
+			setHeadY(headY + 10);
+		} else if (moveXY.includes('ArrowLeft')) {
+			setHeadVX(-1);
+		} else if (moveXY.includes('ArrowRight')) {
+			setHeadVX(1);
+		}
+	};
 
 	const draw = (ctx, frameCount) => {
 		ctx.canvas.width = window.innerWidth;
@@ -37,11 +56,10 @@ const Canvas = (props, keys) => {
 		ctx.clearRect(0, 0, ctx.canvas.width, ctx.canvas.height);
 		ctx.fillStyle = '#000000';
 		ctx.beginPath();
-		let headX = 0.25 * ctx.canvas.width;
-		let headY = 0.25 * ctx.canvas.height;
+		setHeadX(headX + headVX);
 		ctx.arc(
-			headY,
 			headX,
+			headY,
 			20 * Math.sin(frameCount * 0.05) ** 2,
 			0,
 			2 * Math.PI
