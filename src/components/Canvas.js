@@ -6,6 +6,7 @@ const Canvas = (props, keys) => {
 	const [headX, setHeadX] = useState(0.25 * window.innerWidth);
 	const [headY, setHeadY] = useState(0.25 * window.innerHeight);
 	let [headVX, setHeadVX] = useState(0);
+	let [headVY, setHeadVY] = useState(0);
 
 	useKeyDown(() => {
 		detectKeyDown('ArrowUp');
@@ -40,9 +41,9 @@ const Canvas = (props, keys) => {
 
 	const update = () => {
 		if (moveXY.includes('ArrowUp')) {
-			setHeadY(headY - 10);
+			setHeadVY(-1);
 		} else if (moveXY.includes('ArrowDown')) {
-			setHeadY(headY + 10);
+			setHeadVY(1);
 		} else if (moveXY.includes('ArrowLeft')) {
 			setHeadVX(-1);
 		} else if (moveXY.includes('ArrowRight')) {
@@ -55,12 +56,13 @@ const Canvas = (props, keys) => {
 		ctx.canvas.height = window.innerHeight;
 		ctx.clearRect(0, 0, ctx.canvas.width, ctx.canvas.height);
 		ctx.fillStyle = '#000000';
-		ctx.beginPath();
 		setHeadX(headX + headVX);
+		setHeadY(headY + headVY);
+		ctx.beginPath();
 		ctx.arc(
 			headX,
 			headY,
-			20 * Math.sin(frameCount * 0.05) ** 2,
+			10 * Math.sin(frameCount * 0.05) ** 2 + 20,
 			0,
 			2 * Math.PI
 		);
