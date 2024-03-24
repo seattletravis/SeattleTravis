@@ -12,7 +12,7 @@ import AboutMe from './components/AboutMe';
 import Update from './components/Update';
 
 import React from 'react';
-import Canvas from '../src/components/Canvas';
+// import Canvas from '../src/components/Canvas';
 
 function App() {
 	useEffect(() => {

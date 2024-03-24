@@ -24,9 +24,14 @@ nav {
 }
 
 .navButtonsBlock {
+	width: 50%;
 	display: flex;
 	align-items: center;
 	justify-content: left;
+}
+
+.navButtonsBlock ul {
+	width: 50%;
 }
 
 .navBarTitle {
@@ -155,11 +160,17 @@ nav {
 }
 
 .centerContactBanner {
+	width: 99%;
 	display: flex;
 	align-items: center;
-	justify-content: center;
+	justify-content: left;
+	/* margin-left: 4rem; */
 	position: relative;
 	z-index: 11;
+}
+
+.centerContactBanner ul {
+	width: 100%;
 }
 
 ul {
@@ -243,7 +254,6 @@ a {
 .responsiveFontSizing {
 	font-size: 0.75vw;
 	padding-bottom: 2vw;
-	/* border: solid 3px yellow; */
 }
 
 .responsiveFontSizingSmallScreen {
@@ -266,7 +276,6 @@ a {
 .contentBanner img {
 	height: auto;
 	width: 90vw;
-	/* border: solid 3px blue; */
 	border-radius: 3vw;
 }
 
