@@ -15,6 +15,14 @@ function AboutMe() {
 					<h1>About Me - Travis Lamberte</h1>
 					<br></br>
 					<p>
+						<b>Update: Mar 2024</b>
+						<br></br>
+						I've obtained the IBM Full Stack Developer Certificate. You can see
+						my this certificate as well as my other awards on my linked in
+						profile.
+					</p>
+					<br></br>
+					<p>
 						<b>Update: Oct 2023</b>
 						<br></br>
 						I've obtained the Meta Front-End Developer Certificate. You can see
