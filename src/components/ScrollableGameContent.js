@@ -6,10 +6,10 @@ import { ScrollMenu } from 'react-horizontal-scrolling-menu';
 import 'react-horizontal-scrolling-menu/dist/styles.css';
 import LeftArrow from './LeftArrow';
 import RightArrow from './RightArrow';
+import { useState } from 'react';
 
 function ScrollableGameContent() {
 	const isSmall = useScreenSmall();
-
 	const gameData = [
 		{
 			id: '8',
@@ -17,6 +17,7 @@ function ScrollableGameContent() {
 			language: 'JavaScript',
 			url: 'https://lambertedesign.com',
 			image: 'images/games/snakeLD.png',
+			gif: 'images/games/SnakeGIF.gif',
 			libraries: 'VictorJS',
 		},
 		{
@@ -25,6 +26,7 @@ function ScrollableGameContent() {
 			language: 'JavaScript, HTML, CSS',
 			url: 'https://travis.lamberte.com/tilt3dSinglePlayer/index.html',
 			image: 'images/games/tilt3d1.png',
+			gif: 'images/games/Tilt3DGIF.gif',
 			libraries: 'ThreeJS, CannonES',
 		},
 		{
@@ -33,6 +35,7 @@ function ScrollableGameContent() {
 			language: 'JavaScript, HTML, CSS',
 			url: 'https://travis.lamberte.com/bubbleGum/index.html',
 			image: 'images/games/gum.png',
+			gif: 'images/games/BubbleGumGIF.gif',
 			libraries: 'ThreeJS',
 		},
 		{
@@ -41,6 +44,7 @@ function ScrollableGameContent() {
 			language: 'JavaScript, HTML, CSS',
 			url: 'https://travis.lamberte.com/tilt3dMultiPlayer/index.html',
 			image: 'images/games/tilt3d2.png',
+			gif: 'images/games/Tilt3DGIF.gif',
 			libraries: 'ThreeJS, CannonES',
 		},
 		{
@@ -49,6 +53,7 @@ function ScrollableGameContent() {
 			language: 'JavaScript, HTML, CSS',
 			url: 'https://travis.lamberte.com/clock/index.html',
 			image: 'images/games/beemo.png',
+			gif: 'images/games/beemo.png',
 			libraries: '',
 		},
 		{
@@ -57,6 +62,7 @@ function ScrollableGameContent() {
 			language: 'JavaScript, HTML, CSS',
 			url: 'https://travis.lamberte.com/orbit/index.html',
 			image: 'images/games/orbits.png',
+			gif: 'images/games/orbits.png',
 			libraries: '',
 		},
 		{
@@ -65,6 +71,7 @@ function ScrollableGameContent() {
 			language: 'JavaScript, HTML, CSS',
 			url: 'https://travis.lamberte.com/throwback90s/index.html',
 			image: 'images/games/throwback.png',
+			gif: 'images/games/throwback.png',
 			libraries: '',
 		},
 		{
@@ -73,6 +80,7 @@ function ScrollableGameContent() {
 			language: 'JavaScript, HTML, CSS',
 			url: 'https://travis.lamberte.com/tetromino/index.html',
 			image: 'images/games/tetro.png',
+			gif: 'images/games/tetro.png',
 			libraries: '',
 		},
 	];
@@ -82,7 +90,7 @@ function ScrollableGameContent() {
 			<React.Fragment key={game.id}>
 				<div className='displayTiles dTGames'>
 					<a href={game.url} target='blank'>
-						<img src={game.image} alt='' />
+						<img src={game.gif} alt='' />
 					</a>
 					<div
 						className={
